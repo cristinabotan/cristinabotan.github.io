@@ -32,10 +32,9 @@ a { color: inherit; }
 .btn-line { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
 .btn:hover { filter: brightness(1.08); }
 .label { display: inline-block; padding: 9px 22px; border-radius: 999px; font: 500 17px var(--sans); border: 2px solid transparent; background: linear-gradient(#fff, #fff) padding-box, var(--g-main) border-box; }
-.tag-cod { display: inline-flex; align-items: center; gap: 12px; margin: 0; align-self: flex-start; font: 600 26px var(--sans); letter-spacing: -.01em; }
-.tag-cod .br { width: 16px; height: 36px; flex: none; }
-.tag-cod .dot { width: 9px; height: 9px; border-radius: 50%; display: block; flex: none; }
-.tag-cod span { background: var(--g-main); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.tag-cod { display: inline-flex; align-items: center; gap: 4px; margin: 0; align-self: flex-start; padding: 6px 20px; border-radius: 999px; border: 1.5px solid rgba(232, 121, 168, .6); font: 600 20px var(--sans); letter-spacing: -.01em; }
+.tag-cod svg { width: 44px; height: 38px; flex: none; }
+.tag-cod span { padding: 0 4px; background: var(--g-main); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .meta { font: 600 12px var(--mono); letter-spacing: .12em; text-transform: uppercase; opacity: .65; }
 
 /* ---------- HERO ---------- */
