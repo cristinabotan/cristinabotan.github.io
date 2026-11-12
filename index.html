@@ -3,133 +3,199 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cristina Boțan · Dezvoltatoare full-stack și n8n</title>
-<meta name="description" content="Portofoliul Cristinei Boțan: aplicații web cu Next.js și TypeScript, baze de date PostgreSQL și automatizări n8n.">
-<meta property="og:title" content="Cristina Boțan · Dezvoltatoare full-stack și n8n">
-<meta property="og:description" content="Aplicații web, baze de date și automatizări n8n. Proiecte reale, cu capturi și explicații.">
+<title>Cristina Boțan · AI Automation &amp; Web Developer</title>
+<meta name="description" content="Portofoliul Cristinei Boțan: automatizări AI în n8n, aplicații web, un curs de n8n în două limbi și un magazin online WooCommerce.">
+<meta property="og:title" content="Cristina Boțan · AI Automation & Web Developer">
+<meta property="og:description" content="Automatizări n8n, aplicații web și baze de date. Proiecte reale, cu capturi și explicații.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23b44cf0'/%3E%3Cstop offset='1' stop-color='%23f0607a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230c0612'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='url(%23g)'%3ECB%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<meta property="og:image" content="https://cristinabotan.github.io/img/poza.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23B98CF5'/%3E%3Cstop offset='1' stop-color='%23F6A06B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2306021E'/%3E%3Ctext x='32' y='43' font-family='Georgia' font-style='italic' font-size='32' text-anchor='middle' fill='url(%23g)'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;600&display=swap">
 <link rel="stylesheet" href="css/stil.css">
 </head>
 <body>
-<div class="pagina">
-  <nav class="nav" aria-label="Meniu"><a class="logo grad" href="index.html">Cristina&lt;/&gt;</a><ul><li><a href="index.html#acasa" aria-current="page">Acasă</a></li><li><a href="index.html#despre">Despre</a></li><li><a href="index.html#abilitati">Abilități</a></li><li><a href="proiecte.html">Proiecte</a></li><li><a href="index.html#contact">Contact</a></li></ul></nav>
+<div class="wrap">
 
-  <section class="hero" id="acasa" aria-labelledby="salut">
-    <div>
-      <h1 id="salut">Bună, sunt Cristina</h1>
-      <p class="rol grad">Dezvoltatoare full-stack și n8n</p>
-      <p class="lead">Construiesc aplicații web folosite zilnic și automatizări care le pun în mișcare: de la baza de date până la ecranul din fața omului. Ultimul meu proiect: facturarea și monitorizarea unui CRM folosit de o echipă reală.</p>
-      <div class="actiuni">
-        <a class="btn btn-plin" href="proiecte.html">Vezi proiectele</a>
-        <a class="btn btn-contur" href="#contact">Contact</a>
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="acasa">
+    <div class="mesh" aria-hidden="true"></div><div class="streak s3" aria-hidden="true"></div><div class="streak s1" aria-hidden="true"></div><div class="streak s2" aria-hidden="true"></div>
+    <nav class="nav" aria-label="Meniu">
+      <a class="logo" href="#acasa"><span class="gt">Cristina</span></a>
+      <ul class="menu hero-menu">
+        <li><a href="#acasa" aria-current="page">Acasă</a></li>
+        <li><a href="#despre">Despre</a></li>
+        <li><a href="#portofoliu">Portofoliu</a></li>
+        <li><a href="#experienta">Experiență</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn btn-grad" href="fisiere/Cristina_Botan_CV.pdf" download>Descarcă CV ↓</a>
+    </nav>
+    <div class="hero-main">
+      <div>
+        <p class="hello">Bună, sunt Cristina</p>
+        <h1 class="big"><span class="l1">AI Automation</span><span class="l2"><a class="arrow" href="#portofoliu" aria-label="Vezi portofoliul">→</a><b>&amp; Web Developer</b></span></h1>
+        <p class="hero-sub">Îmi place să înțeleg cum lucrează oamenii și să le iau de pe umeri munca repetitivă. Construiesc automatizări în n8n și pagini web care chiar îi ajută în fiecare zi.</p>
       </div>
+      <div class="portrait"><img src="img/poza.webp" alt="Cristina Boțan" width="600" height="760"></div>
     </div>
-    <div class="cerc-wrap" aria-hidden="true">
-      <div class="cerc"><span class="grad">CB</span></div>
-      <span class="insigna i1">TS</span><span class="insigna i2">n8n</span><span class="insigna i3">SQL</span><span class="insigna i4">JS</span>
+    <div class="stack" aria-label="Tehnologii">
+      <span><i style="background:#000;border:1px solid #444">N</i>Next.js</span>
+      <span><i style="background:#3178C6">TS</i>TypeScript</span>
+      <span><i style="background:#336791">PG</i>PostgreSQL</span>
+      <span><i style="background:#EA4B71">n8n</i>n8n</span>
+      <span><i style="background:#8E75B2">AI</i>Agenți AI</span>
+      <span><i style="background:#21759B">W</i>WordPress</span>
+    </div>
+  </header>
+
+  <!-- ===== DESPRE ===== -->
+  <section class="sec" id="despre" aria-labelledby="despre-t">
+    <h2 class="label" id="despre-t" style="margin:0">Despre mine</h2>
+    <p class="statement"><span class="o">Sunt curioasă</span> și îmi asum serios ce fac. Am învățat <span class="p">n8n, cod și baze de date</span> lucrând pe <span class="o">proiecte reale</span>, <span class="g">alături de o echipă și de oamenii care le folosesc.</span></p>
+    <p class="sub">Am licența în tehnologii ale informației (media 9,77). Am trecut printr-un curs de automatizări AI, un stagiu și apoi un post de dezvoltatoare și mentoră. Înainte am fost asistentă de manager de proiect, așa că știu ce înseamnă un termen și un buget.</p>
+    <div class="bento">
+      <div class="bc b1"><span class="k">Automatizări n8n</span><div><div class="n">158</div><p>noduri în proiectul meu final: un flux principal și 6 sub-fluxuri pentru stoc, facturi, încasări, salarii și KPI.</p></div></div>
+      <div class="bc b2"><span class="k">CRM</span><div><div class="n">28</div><p>pull requesturi revizuite, ~36.000 de rânduri</p></div></div>
+      <div class="bc b3"><span class="k">Calitate</span><div><div class="n">225</div><p>teste automate scrise</p></div></div>
+      <div class="bc b4"><span class="k">Curs n8n</span><div><div class="n">306</div><p>slide-uri: lecții în română și rusă, plus un glosar de 71 de termeni</p></div></div>
+      <div class="bc b5"><span class="k">Magazin online</span><div><div class="n">221</div><p>produse într-un magazin WooCommerce</p></div></div>
+      <div class="bc b6"><span class="k">Baze de date</span><div><div class="n">20</div><p>migrări PostgreSQL</p></div></div>
     </div>
   </section>
 
-  <section class="sect" id="despre" aria-labelledby="despre-t">
-    <h2 class="titlu-sect" id="despre-t">Despre mine</h2>
-    <div class="despre">
-      <div class="fisa">
-        <div><b class="grad">9,77</b><span>media la licență în TIC</span></div>
-        <div><b class="grad">28</b><span>pull requesturi în CRM</span></div>
-        <div><b class="grad">225</b><span>teste automate scrise</span></div>
-        <div><b class="grad">20</b><span>migrări de bază de date</span></div>
-      </div>
-      <div class="despre-text">
-        <h3 class="grad">Sunt Cristina Boțan</h3>
-        <p>Am licența în tehnologii ale informației la Universitatea Pedagogică „Ion Creangă” din Chișinău.</p>
-        <p>În 2026 am construit, într-un stagiu, modulul de facturare și monitorizare al unui CRM, cu Next.js, PostgreSQL și n8n. Am lucrat cum se lucrează într-o echipă: pull requesturi revizuite, teste automate, migrări încercate întâi pe o bază de test.</p>
-        <p>Îmi place să înțeleg întâi problema omului care folosește ecranul și abia apoi să scriu cod. Vin din managementul de proiect, așa că sunt atentă la termene, costuri și la ce se livrează de fapt.</p>
-        <div class="servicii">
-          <div class="serviciu"><span class="ic">&lt;/&gt;</span>Aplicații web full-stack<small>Next.js · TypeScript</small></div>
-          <div class="serviciu"><span class="ic">n8n</span>Automatizări<small>fluxuri, API-uri, AI</small></div>
-          <div class="serviciu"><span class="ic">SQL</span>Baze de date<small>PostgreSQL · Supabase</small></div>
+  <!-- ===== PORTOFOLIU ===== -->
+  <section class="band" id="portofoliu" aria-labelledby="port-t">
+    <h2 class="word" id="port-t">Portofoliu</h2>
+    <div class="cards">
+
+      <article class="pc c-crm">
+        <div class="pc-left">
+          <span class="meta">01 · Aplicație web · stagiu și angajare, 2026</span>
+          <h3>CRM <span class="it">Facturare &amp; monitorizare</span></h3>
+          <p class="desc">Modulul care emite facturi cu PDF, urmărește plățile, trimite remindere și supraveghează site-urile clienților, într-un CRM folosit zilnic de o echipă.</p>
+          <div class="tags"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Supabase</span><span>Vitest</span></div>
+          <a class="btn btn-dark" href="proiecte.html#crm">Studiul de caz ↗</a>
         </div>
+        <div class="vis vis-crm"><div class="win"><div class="win-bar"><i></i><i></i><i></i><span>facturare / F-2026-0091</span></div><img src="img/editor.webp" alt="Editorul de factură din CRM" loading="lazy"></div></div>
+      </article>
+
+      <article class="pc c-n8n">
+        <div class="pc-left">
+          <span class="meta">02 · Automatizări AI · proiect final de curs</span>
+          <h3>Sistem <span class="it">operațional automatizat</span></h3>
+          <p class="desc">Automatizează operațiunile unei firme mici: facturi cu PDF, stoc cu aprobare în Slack, încasări, salarii și KPI, cu Google Sheets drept bază de date.</p>
+          <div class="tags"><span>n8n</span><span>Agent AI Gemini</span><span>Webhook</span><span>Slack</span><span>Gmail</span><span>Google Sheets</span></div>
+          <a class="btn btn-dark" href="proiecte.html#sistem-n8n">Vezi fluxurile ↗</a>
+        </div>
+        <div class="vis vis-n8n"><div class="win" style="background:#1B1B1F"><div class="win-bar"><i></i><i></i><i></i><span>n8n · Evaluare finală · Workflow principal</span></div><img src="img/n8n-principal.webp" alt="Fluxul principal în editorul n8n" loading="lazy"></div></div>
+      </article>
+
+      <article class="pc c-curs">
+        <div class="pc-left">
+          <span class="meta">03 · Curs · mentoră, 2026</span>
+          <h3>Curs n8n <span class="it">în două limbi</span></h3>
+          <p class="desc">Am construit în HTML lecțiile 2–12 ale unui curs de automatizări AI, pornind de la un design system existent. Apoi am tradus tot cursul în rusă, cu scripturi Python, și am făcut un glosar de termeni.</p>
+          <div class="tags"><span>HTML și CSS</span><span>Python</span><span>Traducere automatizată</span><span>Accesibilitate</span></div>
+          <a class="btn btn-dark" href="proiecte.html#curs">Despre curs ↗</a>
+        </div>
+        <div class="vis vis-curs" aria-hidden="true">
+          <div class="lang"><span class="on">RO</span><span>RU</span></div>
+          <div class="slides">
+            <div class="sl dk"><span class="tg" style="color:#F6A06B">Lecția 4</span><b>Agentul de finanțe</b><div><div class="bar"></div><div class="bar s"></div></div></div>
+            <div class="sl"><span class="tg">Lecția 6</span><b>Procesarea facturilor</b><div><div class="bar"></div><div class="bar s"></div></div></div>
+            <div class="sl"><span class="tg">Урок 10</span><b>Guardrails для AI-агентов</b><div><div class="bar"></div><div class="bar s"></div></div></div>
+            <div class="sl dk"><span class="tg" style="color:#C69CF6">Glosar</span><b>71 de termeni<br>RO · RU</b><div><div class="bar"></div></div></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="pc c-tg">
+        <div class="pc-left">
+          <span class="meta">04 · Agent AI · Telegram</span>
+          <h3>Agent <span class="it">imobiliar</span> pe Telegram</h3>
+          <p class="desc">Un bot care răspunde la întrebări despre proprietăți, notează clienții interesați, programează vizionări în calendar și anunță agentul imobiliar.</p>
+          <div class="tags"><span>Telegram</span><span>2 agenți AI</span><span>Memorie</span><span>Google Sheets</span><span>Calendar</span><span>Gmail</span></div>
+          <a class="btn btn-dark" href="proiecte.html#agent-telegram">Vezi fluxul ↗</a>
+        </div>
+        <div class="vis vis-tg" aria-hidden="true"><div class="canvas">
+          <div class="ctop"><span>n8n · Agent imobiliar</span><span><b>●</b> 19 noduri</span></div>
+          <div class="flow">
+            <div class="nd tr">✈<br>Telegram</div><div class="ed"></div>
+            <div class="nd sw">IF<br>cine scrie?</div>
+            <div class="split">
+              <div><div class="nd ai">🤖<br>Agent<br>clienți</div><span class="tools">Sheets ×5<br>Calendar<br>Memorie</span></div>
+              <div><div class="nd ai">🤖<br>Agent<br>imobiliar</div><span class="tools">Gmail ×2<br>Calculator<br>Memorie</span></div>
+            </div>
+          </div>
+        </div></div>
+      </article>
+
+      <article class="pc c-zilma">
+        <div class="pc-left">
+          <span class="meta">05 · Magazin online · freelance, 2025–2026</span>
+          <h3>Zilma <span class="it">magazin de cosmetice</span></h3>
+          <p class="desc">Un magazin WooCommerce de produse profesionale pentru păr, cu 221 de produse importate din listele de prețuri ale brandurilor. Designul vine dintr-un sistem CSS modular, iar coșul și contul clientului sunt personalizate prin cod.</p>
+          <div class="tags"><span>WordPress</span><span>WooCommerce</span><span>Astra</span><span>Elementor</span><span>CSS modular</span><span>PHP</span></div>
+          <a class="btn btn-dark" href="proiecte.html#zilma">Vezi capturile ↗</a>
+        </div>
+        <div class="vis vis-zilma"><div class="win light"><div class="win-bar"><i></i><i></i><i></i><span>Zilma · Acasă</span></div><img src="img/zilma-acasa.webp" alt="Pagina principală a magazinului Zilma" loading="lazy"></div><div class="mini"><div class="win-bar"><i></i><i></i><i></i><span>Contul meu</span></div><img src="img/zilma-cont.webp" alt="Pagina Contul meu din Zilma" loading="lazy"></div></div>
+      </article>
+
+      <div class="more">
+        <a class="mc" href="proiecte.html#alte-automatizari"><span class="k">n8n · AI</span><b>Bot <span class="it">Instagram &amp; Facebook</span></b><p>Răspunde clienților în mesaje, cu aprobarea unui om pe email înainte de trimitere.</p><span class="nodes"><span>Webhook</span><span>2 agenți AI</span><span>Graph API</span><span>35 noduri</span></span></a>
+        <a class="mc" href="proiecte.html#alte-automatizari"><span class="k">n8n · AI</span><b>Procesarea <span class="it">facturilor</span></b><p>Din Gmail: AI-ul verifică dacă PDF-ul e o factură și îi trece datele în Notion.</p><span class="nodes"><span>Gmail</span><span>Agent AI</span><span>Notion</span><span>21 noduri</span></span></a>
+        <a class="mc" href="proiecte.html#alte-automatizari"><span class="k">n8n · AI</span><b>Postări <span class="it">LinkedIn</span></b><p>Trei agenți AI caută pe web, scriu postarea și generează imaginea, apoi o publică.</p><span class="nodes"><span>Tavily</span><span>3 agenți AI</span><span>Flux</span><span>18 noduri</span></span></a>
+        <a class="mc" href="proiecte.html#baze-de-date"><span class="k">PostgreSQL</span><b>Reguli în <span class="it">baza de date</span></b><p>Indexuri unice parțiale și constrângeri CHECK, scrise ca migrări și testate pe o bază de test.</p><span class="nodes"><span>SQL</span><span>Supabase</span><span>Drizzle</span><span>20 migrări</span></span></a>
       </div>
     </div>
   </section>
 
-  <section class="sect" id="experienta" aria-labelledby="exp-t">
-    <h2 class="titlu-sect" id="exp-t">Experiență și studii</h2>
-    <ol class="linie">
-      <li><span class="cand">2026</span><div><h3>Dezvoltatoare full-stack · stagiu</h3><p>Modulul de facturare și monitorizare al unui CRM intern: facturi cu PDF, remindere, incidente, rapoarte, fluxuri n8n.</p></div></li>
-      <li><span class="cand">2026</span><div><h3>Curs de automatizări n8n</h3><p>Fluxuri cu AI, Telegram, webhook-uri și Google Sheets; proiect final cu un flux principal și cinci sub-fluxuri.</p></div></li>
-      <li><span class="cand">2022 – prezent</span><div><h3>Asistent de manager de proiecte · freelancer</h3><p>Planul proiectului, previziuni bugetare, rapoarte de costuri, riscuri și verificarea livrărilor.</p></div></li>
-      <li><span class="cand">2019 – 2022</span><div><h3>Licență în tehnologii ale informației</h3><p>UPSC „Ion Creangă”, Chișinău. Media 9,77, examenul de licență 10. Teza: un site web cu HTML5, CSS3 și JavaScript.</p></div></li>
-      <li><span class="cand">2019 – 2021</span><div><h3>WordPress developer · voluntariat</h3><p>Site-ul Facultății de Științe ale Educației și Informatică: structura, designul, versiunea mobilă.</p></div></li>
-      <li><span class="cand">2021, 2022</span><div><h3>Conferințe studențești</h3><p>Applet-uri Java cu interfață grafică (2021) și HTML5, CSS3 și JavaScript în dezvoltarea web (2022).</p></div></li>
-      <li><span class="cand">2018 – 2019</span><div><h3>Manager librărie · Litera AVN</h3><p>Stocuri în 1C și pe site, inventar, contracte cu bibliotecile din Moldova.</p></div></li>
-    </ol>
-  </section>
-
-  <section class="sect" id="abilitati" aria-labelledby="abil-t">
-    <h2 class="titlu-sect" id="abil-t">Abilități</h2>
-    <div class="abilitati"><div class="abil"><span>HTML5 și CSS3</span><div class="puncte" role="img" aria-label="9 din 10"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div><div class="abil"><span>n8n</span><div class="puncte" role="img" aria-label="8 din 10"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></div></div><div class="abil"><span>JavaScript</span><div class="puncte" role="img" aria-label="7 din 10"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></div></div><div class="abil"><span>TypeScript</span><div class="puncte" role="img" aria-label="7 din 10"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></div></div><div class="abil"><span>React și Next.js</span><div class="puncte" role="img" aria-label="7 din 10"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></div></div><div class="abil"><span>PostgreSQL și Supabase</span><div class="puncte" role="img" aria-label="7 din 10"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></div></div><div class="abil"><span>Git și GitHub</span><div class="puncte" role="img" aria-label="7 din 10"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></div></div><div class="abil"><span>WordPress</span><div class="puncte" role="img" aria-label="6 din 10"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div><div class="abil"><span>PHP și MySQL</span><div class="puncte" role="img" aria-label="5 din 10"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div><div class="abil"><span>Java</span><div class="puncte" role="img" aria-label="5 din 10"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div></div>
-    <div class="limbi"><span><b>Română</b> · maternă</span><span><b>Rusă</b> · B1</span><span><b>Engleză</b> · A2–B1</span></div>
-  </section>
-
-  <section class="sect" id="proiecte" aria-labelledby="proi-t">
-    <h2 class="titlu-sect" id="proi-t">Proiectele mele</h2>
-    <div class="file" role="group" aria-label="Filtrează proiectele">
-      <button class="fila" type="button" data-f="toate" aria-pressed="true">Toate</button>
-      <button class="fila" type="button" data-f="crm" aria-pressed="false">CRM</button>
-      <button class="fila" type="button" data-f="n8n" aria-pressed="false">n8n</button>
-      <button class="fila" type="button" data-f="baze" aria-pressed="false">Baze de date</button>
-    </div>
-    <div class="carduri"><article class="card" data-cat="crm">
-        <div class="vizual"><img src="img/editor.webp" alt="Editorul de factură din CRM" loading="lazy"></div>
-        <span class="tag">CRM</span><h3>Facturare și monitorizare</h3><p>Editor de facturi cu PDF, liste de facturi, rambursări, incidente ale site-urilor și formular pentru client.</p>
-        <div class="jos"><a class="btn btn-plin" href="proiecte.html#crm">Vezi detalii</a></div>
-      </article><article class="card" data-cat="crm">
-        <div class="vizual"><img src="img/incidente.webp" alt="Panoul incidentelor" loading="lazy"></div>
-        <span class="tag">CRM</span><h3>Panoul incidentelor</h3><p>Site-urile clienților trec prin Căzut, Revenit și Închis. Anunțul către client îl trimite un om.</p>
-        <div class="jos"><a class="btn btn-plin" href="proiecte.html#crm">Vezi detalii</a></div>
-      </article><article class="card" data-cat="n8n">
-        <div class="vizual"><svg class="panza" viewBox="-124 404 1994 460" style="--lat:1994px" role="img" aria-label="Monitorizarea site-urilor clienților"><defs><pattern id="puncte-2380" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1.1" class="pct"/></pattern></defs><rect x="-124" y="404" width="1994" height="460" fill="url(#puncte-2380)"/><path class="m" d="M36 546.0 C98.0 546.0 98.0 546.0 160 546.0"/><path class="sag" d="M153 541.0 L160 546.0 L153 551.0"/><path class="m" d="M932 546.6666666666666 C978.0 546.6666666666666 978.0 626.0 1024 626.0"/><path class="sag" d="M1017 621.0 L1024 626.0 L1017 631.0"/><path class="m" d="M260 546.0 C322.0 546.0 322.0 546.0 384 546.0"/><path class="sag" d="M377 541.0 L384 546.0 L377 551.0"/><path class="m" d="M484 529.3333333333334 C546.0 529.3333333333334 546.0 530.0 608 530.0"/><path class="sag" d="M601 525.0 L608 530.0 L601 535.0"/><path class="m" d="M708 530.0 C770.0 530.0 770.0 530.0 832 530.0"/><path class="sag" d="M825 525.0 L832 530.0 L825 535.0"/><path class="m" d="M1124 609.3333333333334 C1170.0 609.3333333333334 1170.0 514.0 1216 514.0"/><path class="sag" d="M1209 509.0 L1216 514.0 L1209 519.0"/><path class="m" d="M1124 642.6666666666666 C1266.0 642.6666666666666 1266.0 642.0 1408 642.0"/><path class="sag" d="M1401 637.0 L1408 642.0 L1401 647.0"/><path class="m" d="M1316 497.3333333333333 C1362.0 497.3333333333333 1362.0 642.0 1408 642.0"/><path class="sag" d="M1401 637.0 L1408 642.0 L1401 647.0"/><path class="m" d="M1316 530.6666666666666 C1498.0 530.6666666666666 1498.0 674.0 1680 674.0"/><path class="sag" d="M1673 669.0 L1680 674.0 L1673 679.0"/><path class="m" d="M1508 642.0 C1558 642.0 1558 732 1508 732 L832 732 C782 732 782 530.0 832 530.0"/><path class="sag" d="M825 525.0 L832 530.0 L825 535.0"/><path class="m" d="M1780 674.0 C1830 674.0 1830 778 1780 778 L832 778 C782 778 782 530.0 832 530.0"/><path class="sag" d="M825 525.0 L832 530.0 L825 535.0"/><g class="nod-n8n"><path class="corp" d="M-26 496 H28 Q36 496 36 504 V588 Q36 596 28 596 H-26 A38 38 0 0 1 -64 558 V534 A38 38 0 0 1 -26 496 Z"/><g class="ic" transform="translate(-14.0,546.0) scale(1.35)"><circle cx="0" cy="0" r="15" fill="none" stroke="currentColor" stroke-width="3"/><path d="M0 -8 V0 L6 5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></g><circle class="h" cx="36" cy="546.0" r="5"/><text class="et" x="-14.0" y="624">La 30 de</text><text class="et" x="-14.0" y="646">minute</text></g><g class="nod-n8n"><rect class="corp" x="160" y="496" width="100" height="100" rx="8"/><g class="ic" transform="translate(210.0,546.0) scale(1.35)"><path d="M-7 -9 L-16 0 L-7 9 M7 -9 L16 0 L7 9" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g><circle class="h" cx="260" cy="546.0" r="5"/><rect class="h" x="156" y="539.0" width="8" height="14" rx="2"/><text class="et" x="210.0" y="624">Reguli de</text><text class="et" x="210.0" y="646">rulare</text></g><g class="nod-n8n"><rect class="corp" x="384" y="496" width="100" height="100" rx="8"/><g class="ic" transform="translate(434.0,546.0) scale(1.35)"><path d="M-14 8 V-2 Q-14 -10 -6 -10 H12 M6 -16 L12 -10 L6 -4 M-14 8 Q-14 14 -6 14 H12 M6 8 L12 14 L6 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(0,-2)"/></g><circle class="h" cx="484" cy="529.3333333333334" r="5"/><circle class="h" cx="484" cy="562.6666666666666" r="5"/><rect class="h" x="380" y="539.0" width="8" height="14" rx="2"/><text class="ies" x="494" y="523.3333333333334">da</text><text class="ies" x="494" y="556.6666666666666">nu</text><text class="et" x="434.0" y="624">L–V, 8–17?</text></g><g class="nod-n8n accent"><rect class="corp" x="608" y="480" width="100" height="100" rx="8"/><g class="ic" transform="translate(658.0,530.0) scale(1.35)"><rect x="-15" y="-12" width="30" height="24" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><path d="M-15 -4 H15" stroke="currentColor" stroke-width="3"/></g><circle class="h" cx="708" cy="530.0" r="5"/><rect class="h" x="604" y="523.0" width="8" height="14" rx="2"/><text class="et" x="658.0" y="608">Aplicație:</text><text class="et" x="658.0" y="630">clienții de</text><text class="et" x="658.0" y="652">verificat</text></g><g class="nod-n8n"><rect class="corp" x="832" y="480" width="100" height="100" rx="8"/><g class="ic" transform="translate(882.0,530.0) scale(1.35)"><path d="M12 -6 A13 13 0 1 0 13 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M6 -10 L13 -6 L10 2" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g><circle class="h" cx="932" cy="513.3333333333334" r="5"/><circle class="h" cx="932" cy="546.6666666666666" r="5"/><rect class="h" x="828" y="523.0" width="8" height="14" rx="2"/><text class="ies" x="942" y="507.33333333333337">gata</text><text class="ies" x="942" y="540.6666666666666">buclă</text><text class="et" x="882.0" y="608">Fiecare</text><text class="et" x="882.0" y="630">client</text></g><g class="nod-n8n"><rect class="corp" x="1024" y="576" width="100" height="100" rx="8"/><g class="ic" transform="translate(1074.0,626.0) scale(1.35)"><circle r="15" fill="none" stroke="currentColor" stroke-width="3"/><ellipse rx="6" ry="15" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M-15 0 H15" stroke="currentColor" stroke-width="2.5"/></g><circle class="h" cx="1124" cy="609.3333333333334" r="5"/><circle class="h" cx="1124" cy="642.6666666666666" r="5"/><rect class="h" x="1020" y="619.0" width="8" height="14" rx="2"/><text class="ies" x="1134" y="603.3333333333334">ok</text><text class="ies" x="1134" y="636.6666666666666">eroare</text><text class="et" x="1074.0" y="704">Verifică</text><text class="et" x="1074.0" y="726">site-ul</text></g><g class="nod-n8n"><rect class="corp" x="1216" y="464" width="100" height="100" rx="8"/><g class="ic" transform="translate(1266.0,514.0) scale(1.35)"><path d="M-14 8 V-2 Q-14 -10 -6 -10 H12 M6 -16 L12 -10 L6 -4 M-14 8 Q-14 14 -6 14 H12 M6 8 L12 14 L6 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(0,-2)"/></g><circle class="h" cx="1316" cy="497.3333333333333" r="5"/><circle class="h" cx="1316" cy="530.6666666666666" r="5"/><rect class="h" x="1212" y="507.0" width="8" height="14" rx="2"/><text class="ies" x="1326" y="491.3333333333333">da</text><text class="ies" x="1326" y="524.6666666666666">nu</text><text class="et" x="1266.0" y="592">Site căzut?</text></g><g class="nod-n8n accent"><rect class="corp" x="1408" y="592" width="100" height="100" rx="8"/><g class="ic" transform="translate(1458.0,642.0) scale(1.35)"><rect x="-15" y="-12" width="30" height="24" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><path d="M-15 -4 H15" stroke="currentColor" stroke-width="3"/></g><circle class="h" cx="1508" cy="642.0" r="5"/><rect class="h" x="1404" y="635.0" width="8" height="14" rx="2"/><text class="et" x="1458.0" y="720">Aplicație:</text><text class="et" x="1458.0" y="742">notează</text><text class="et" x="1458.0" y="764">căderea</text></g><g class="nod-n8n accent"><rect class="corp" x="1680" y="624" width="100" height="100" rx="8"/><g class="ic" transform="translate(1730.0,674.0) scale(1.35)"><rect x="-15" y="-12" width="30" height="24" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><path d="M-15 -4 H15" stroke="currentColor" stroke-width="3"/></g><circle class="h" cx="1780" cy="674.0" r="5"/><rect class="h" x="1676" y="667.0" width="8" height="14" rx="2"/><text class="et" x="1730.0" y="752">Aplicație:</text><text class="et" x="1730.0" y="774">notează</text><text class="et" x="1730.0" y="796">revenirea</text></g></svg></div>
-        <span class="tag">n8n</span><h3>Monitorizarea site-urilor</h3><p>La 30 de minute verifică fiecare site și îi spune CRM-ului dacă a căzut sau a revenit.</p>
-        <div class="jos"><a class="btn btn-plin" href="proiecte.html#n8n">Vezi detalii</a></div>
-      </article><article class="card" data-cat="n8n">
-        <div class="vizual"><div class="mare-cifra"><s>44</s><span class="grad">4</span></div></div>
-        <span class="tag">n8n</span><h3>Din 44 de noduri, 4</h3><p>Am mutat logica de facturare și remindere din n8n în aplicație, unde e testată.</p>
-        <div class="jos"><a class="btn btn-plin" href="proiecte.html#n8n">Vezi detalii</a></div>
-      </article><article class="card" data-cat="baze">
-        <div class="vizual"><pre class="cod-mini"><span class="c">-- o singură sarcină deschisă pe proiect</span>
-<span class="k">create unique index</span> tasks_o_sarcina
-  <span class="k">on</span> tasks (project_id)
-  <span class="k">where</span> status <span class="k">not in</span>
-    (<span class="s">'finalizat'</span>, <span class="s">'anulat'</span>);
-
-<span class="c">-- firmă sau cursant, niciodată ambele</span>
-<span class="k">check</span> ((project_id <span class="k">is null</span>)
-    &lt;&gt; (enrollment_id <span class="k">is null</span>));</pre></div>
-        <span class="tag">Baze de date</span><h3>Reguli păzite de PostgreSQL</h3><p>20 de migrări: constrângeri, indexuri unice și teste pe o bază de test.</p>
-        <div class="jos"><a class="btn btn-plin" href="proiecte.html#baze-de-date">Vezi detalii</a></div>
-      </article></div>
-    <p style="text-align:center"><a class="btn btn-contur" href="proiecte.html">Toate proiectele, în detaliu</a></p>
-  </section>
-
-  <section class="sect" id="contact" aria-labelledby="contact-t">
-    <h2 class="titlu-sect" id="contact-t">Contact</h2>
-    <div class="contact">
-      <p>Caut un post de dezvoltatoare full-stack sau de automatizări n8n, în birou sau la distanță. Scrie-mi pe email: răspund în aceeași zi.</p>
-      <div class="rand"><code id="email">botancristina1321@gmail.com</code><button class="btn btn-plin" type="button" id="copiaza">Copiază adresa</button></div>
-      <p class="stare-copie" id="stare" aria-live="polite"></p>
-      <div class="retele">
-        <a class="btn btn-contur" href="https://github.com/cristinabotan" target="_blank" rel="noopener">GitHub</a>
-        <!-- LinkedIn: scoate comentariul de mai jos și pune linkul tău
-        <a class="btn btn-contur" href="https://www.linkedin.com/in/NUMELE-TAU" target="_blank" rel="noopener">LinkedIn</a>
-        -->
+  <!-- ===== EXPERIENȚĂ ===== -->
+  <section class="sec" id="experienta" aria-labelledby="exp-t">
+    <h2 class="label" id="exp-t" style="margin:0">Experiență și studii</h2>
+    <div class="exp">
+      <ol class="tl">
+        <li><span class="w">10 – 11 / 2026</span><div><h3>Dezvoltatoare de sisteme informatice și mentoră</h3><p>Am analizat procese operaționale complexe și le-am transformat în fluxuri automatizate, cu ramificări, validări și integrări între sisteme. Am rezolvat problemele găsite în auditurile de cod și interfață, m-am pregătit pentru rolul de mentoră și am coordonat stagiarii.</p></div></li>
+        <li><span class="w">06 – 09 / 2026</span><div><h3>AI Automation &amp; Software Development · stagiu</h3><p>Automatizări n8n pentru facturi, notificări de plată, rapoarte și colectarea datelor fiscale, integrate în CRM-ul intern (Next.js, TypeScript, PostgreSQL). Monitorizarea site-urilor clienților și a incidentelor.</p></div></li>
+        <li><span class="w">03 – 05 / 2026</span><div><h3>Curs „AI Automation în n8n”</h3><p>12 lecții practice: fluxuri n8n, API-uri și instrumente AI/LLM.</p></div></li>
+        <li><span class="w">05/2025 – 05/2026</span><div><h3>WordPress Developer · freelance</h3><p>Magazinul online Zilma, cu WordPress și WooCommerce: paginile magazinului, contul clientului și lista de dorințe, cu tema Astra și Elementor.</p></div></li>
+        <li><span class="w">10/2022 – 03/2026</span><div><h3>Asistentă manager de proiect · freelance</h3><p>Planul proiectului, verificarea livrabilelor, previziuni bugetare, rapoarte de costuri, riscuri și ședințe.</p></div></li>
+        <li><span class="w">2019 – 2022</span><div><h3>Licență în tehnologii ale informației și comunicațiilor</h3><p>UPSC „Ion Creangă”, Chișinău · media 9,77. Teza: un site web cu HTML5, CSS3 și JavaScript.</p></div></li>
+        <li><span class="w">2019 – 2021</span><div><h3>WordPress Developer · voluntariat</h3><p>Site-ul Facultății de Științe ale Educației și Informatică: pagini, conținut și afișare pe mobil.</p></div></li>
+        <li><span class="w">10/2018 – 08/2019</span><div><h3>Manager librărie</h3><p>Stocuri, inventar și relația cu bibliotecile.</p></div></li>
+      </ol>
+      <div class="side">
+        <div class="box"><h4>Competențe tehnice</h4>
+          <div class="grp"><p>Automatizare și AI</p><div class="chips"><span>n8n</span><span>Automatizarea proceselor</span><span>API-uri</span><span>Fluxuri AI/LLM</span></div></div>
+          <div class="grp"><p>Web și software</p><div class="chips"><span>WordPress</span><span>WooCommerce</span><span>Elementor</span><span>HTML5 și CSS3</span><span>JavaScript</span><span>PHP</span><span>React</span><span>Next.js</span><span>TypeScript</span></div></div>
+          <div class="grp"><p>Date și instrumente</p><div class="chips"><span>PostgreSQL</span><span>MySQL</span><span>Supabase</span><span>NocoDB</span><span>Git și GitHub</span><span>Claude Code</span><span>1C</span></div></div>
+        </div>
+        <div class="cert"><i>✓</i><div><b>AI Automation în n8n</b><span>certificat · mai 2026</span></div><a class="btn btn-grad" href="fisiere/certificat-ai-automation-n8n.pdf" target="_blank" rel="noopener">PDF ↓</a></div>
+        <div class="cert"><i>✓</i><div><b>Stagiu AI Automation &amp; Software Development</b><span>certificat · septembrie 2026</span></div><a class="btn btn-grad" href="fisiere/certificat-stagiu-ai-automation.pdf" target="_blank" rel="noopener">PDF ↓</a></div>
+        <p class="rec">Scrisoarea de recomandare o trimit la cerere.</p>
+        <div class="box" style="background:#F4F0F8"><h4>Limbi</h4><div class="chips"><span>Română · nativă</span><span>Rusă · conversațional</span><span>Engleză · de bază</span></div></div>
       </div>
     </div>
   </section>
 
-  <footer class="subsol"><span class="grad" style="font-family:var(--font-display);font-weight:700">Cristina&lt;/&gt;</span><span>Capturile din proiecte nu conțin date reale ale firmei sau ale clienților.</span></footer>
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact" aria-labelledby="contact-t">
+    <h2 class="label" id="contact-t" style="margin:0">Contact</h2>
+    <div class="clinks">
+      <button class="lnk main" type="button" id="copiaza" data-email="botancristina1321@gmail.com">botancristina1321@gmail.com <span>copiază ⧉</span></button>
+      <a class="lnk" href="https://www.linkedin.com/in/cristina-b-6a0a77439" target="_blank" rel="noopener">LinkedIn <span>linkedin.com/in/cristina-b-6a0a77439 ↗</span></a>
+      <a class="lnk" href="https://github.com/cristinabotan" target="_blank" rel="noopener">GitHub <span>github.com/cristinabotan ↗</span></a>
+      <a class="lnk" href="fisiere/Cristina_Botan_CV.pdf" download>CV în PDF <span>descarcă ↓</span></a>
+    </div>
+    <p class="stare" id="stare" aria-live="polite"></p>
+  </section>
+
+  <footer class="foot">
+    <span>© 2026</span>
+    <span><a href="#acasa">Acasă</a> · <a href="#despre">Despre</a> · <a href="#portofoliu">Portofoliu</a> · <a href="proiecte.html">Proiecte în detaliu</a> · <a href="#contact">Contact</a></span>
+    <span>Capturile nu conțin date reale ale clienților.</span>
+  </footer>
 </div>
 <script src="js/script.js"></script>
 </body>
