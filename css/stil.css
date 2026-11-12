@@ -33,7 +33,7 @@ a { color: inherit; }
 .btn:hover { filter: brightness(1.08); }
 .label { display: inline-block; padding: 9px 22px; border-radius: 999px; font: 500 17px var(--sans); border: 2px solid transparent; background: linear-gradient(#fff, #fff) padding-box, var(--g-main) border-box; }
 .tag-cod { display: inline-flex; align-items: center; gap: 4px; margin: 0; align-self: flex-start; padding: 6px 20px; border-radius: 999px; border: 1.5px solid rgba(232, 121, 168, .6); font: 600 20px var(--sans); letter-spacing: -.01em; }
-.tag-cod svg { width: 44px; height: 38px; flex: none; }
+.tag-cod svg { width: 34px; height: 38px; flex: none; }
 .tag-cod span { padding: 0 4px; background: var(--g-main); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .meta { font: 600 12px var(--mono); letter-spacing: .12em; text-transform: uppercase; opacity: .65; }
 
