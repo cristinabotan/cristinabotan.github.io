@@ -261,33 +261,30 @@ a { color: inherit; }
 .p-dark .more { margin-top: 0; }
 
 
-/* ---------- grila de proiecte (pagina principală) ---------- */
-.band { display: flex; flex-direction: column; }
-.pgrid { position: relative; margin: -40px auto 0; width: 100%; max-width: 1180px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 20px; }
-.pcard { display: flex; flex-direction: column; gap: 12px; text-decoration: none; color: #fff; }
-.pimg { position: relative; aspect-ratio: 16 / 8.6; border-radius: 22px; overflow: hidden; }
-.pimg img { position: absolute; left: 22px; top: 22px; width: calc(100% - 22px); height: auto; border-radius: 12px 0 0 0; box-shadow: 0 20px 40px rgba(20, 12, 36, .35); transition: transform .35s ease; transform-origin: top left; }
-.pcard:hover .pimg img { transform: scale(1.03); }
-.go { position: absolute; left: 50%; top: 50%; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%; background: rgba(20, 12, 36, .78); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 26px; opacity: 0; transform: scale(.85); transition: opacity .25s, transform .25s; z-index: 2; }
-.pcard:hover .go, .pcard:focus-visible .go { opacity: 1; transform: scale(1); }
-.pimg::after { content: ""; position: absolute; inset: 0; background: rgba(6, 2, 30, 0); transition: background .25s; z-index: 1; }
-.pcard:hover .pimg::after { background: rgba(6, 2, 30, .25); }
-.ptag { position: absolute; left: 14px; bottom: 12px; z-index: 2; padding: 5px 12px; border-radius: 999px; background: rgba(255, 255, 255, .92); color: var(--ink); font: 600 12px var(--sans); }
-.pinfo { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 0 4px; }
-.pinfo h3 { margin: 0; font: 600 18px/1.3 var(--sans); }
-.pinfo span { font: 12px var(--mono); color: rgba(255, 255, 255, .55); white-space: nowrap; }
-.mock { display: flex; align-items: center; justify-content: center; }
-.mock.dark { background: linear-gradient(160deg, #2A1748, #120830); border: 1px solid rgba(255, 255, 255, .12); }
-.mslides { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 82%; }
-.mslides .sl { aspect-ratio: 4 / 3; padding: 14px; color: var(--ink); }
-.mslides .sl.dk { color: #fff; }
-.mslides .sl b { font-size: 15px; }
-.mflow { display: flex; align-items: center; padding: 18px 20px; border-radius: 16px; background-color: #1C1830; background-image: radial-gradient(#3A3352 1.2px, transparent 1.2px); background-size: 18px 18px; box-shadow: 0 20px 40px rgba(20, 12, 36, .35); }
-.mflow .nd { width: 66px; height: 66px; font-size: 10px; }
-.mflow .nd.ai { width: 86px; }
-.mflow .ed { width: 22px; }
-.mlist { display: flex; flex-direction: column; gap: 6px; width: 78%; margin-top: -26px; }
-.mlist span { padding: 7px 14px; border-radius: 12px; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .12); font: 500 14px var(--sans); color: rgba(255, 255, 255, .9); }
+
+/* ---------- Portofoliu: file de filtrare și 6 cartonașe identice ---------- */
+.port3 { align-items: center; text-align: center; }
+.port3 .tag-cod { align-self: center; }
+.port3 { background: var(--paper); border-radius: 36px; margin-top: 90px; padding: 44px 48px 44px; gap: 22px; scroll-margin-top: 10px; }
+.filtre { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.filtre button { font: 500 15px var(--sans); padding: 10px 20px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--muted); cursor: pointer; }
+.filtre button:hover { color: var(--ink); border-color: var(--lilac); }
+.filtre button.on { background: var(--night); color: #fff; border-color: var(--night); }
+.grid3 { width: 100%; max-width: 1200px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; text-align: left; }
+.pc3 { display: flex; flex-direction: column; gap: 10px; padding: 22px 24px; border-radius: 24px; background: #fff; border: 1px solid var(--line); text-decoration: none; color: var(--ink); transition: transform .2s, box-shadow .2s, border-color .2s; }
+.pc3:hover { transform: translateY(-4px); box-shadow: 0 24px 50px -24px rgba(111, 86, 147, .45); border-color: transparent; background: linear-gradient(#fff, #fff) padding-box, var(--g-main) border-box; }
+.pc3-top { display: flex; justify-content: space-between; align-items: center; }
+.nr { font: 600 13px var(--mono); color: var(--lilac); }
+.cat { font: 600 11px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.pc3 h3 { margin: 6px 0 0; font: 700 22px/1.2 var(--sans); letter-spacing: -.02em; }
+.pc3 p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--muted); }
+.pc3-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 6px; }
+.pc3-tags span { font-size: 12.5px; padding: 5px 11px; border-radius: 999px; background: var(--paper); border: 1px solid var(--line); }
+.pc3-go { font: 600 14px var(--sans); color: var(--ink); border-top: 1px solid var(--line); padding-top: 12px; }
+.pc3-go b { display: inline-block; transition: transform .2s; background: var(--g-main); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.pc3:hover .pc3-go b { transform: translateX(4px); }
+@media (max-width: 1100px) { .grid3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .grid3 { grid-template-columns: minmax(0, 1fr); } .port3 { padding: 50px 14px; border-radius: 26px; margin-top: 60px; } }
 
 /* ---------- paginile de proiect ---------- */
 .proj > header h1 { font: 700 clamp(34px, 4.2vw, 58px)/1.04 var(--sans); letter-spacing: -.035em; margin: 0; }
@@ -302,12 +299,8 @@ a { color: inherit; }
 .pnav .dr { text-align: right; }
 .pnav .toate { justify-content: center; align-items: center; background: var(--g-main); color: #fff; border: 0; font-weight: 600; }
 @media (max-width: 1100px) {
-  .pgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
+  }
 @media (max-width: 760px) {
-  .pgrid { grid-template-columns: minmax(0, 1fr); margin-top: -6px; }
-  .word { font-size: 15vw; }
-  .go { opacity: 1; transform: scale(.8); width: 48px; height: 48px; margin: -24px 0 0 -24px; font-size: 20px; }
   .pnav { grid-template-columns: minmax(0, 1fr); }
   .pnav .dr { text-align: left; }
 }

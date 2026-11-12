@@ -12,3 +12,9 @@ if (buton) {
     }
   });
 }
+
+// Filele din Portofoliu: arată doar proiectele din categoria aleasă.
+document.querySelectorAll('.filtre button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.filtre button').forEach(x => x.classList.toggle('on', x === b));
+  document.querySelectorAll('.pc3').forEach(c => { c.hidden = b.dataset.f !== 'toate' && c.dataset.cat !== b.dataset.f; });
+}));
