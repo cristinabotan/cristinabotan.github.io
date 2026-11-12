@@ -1,5 +1,7 @@
 # Portofoliul Cristinei Boțan
 
+**Online:** https://cristinabotan.github.io
+
 Site personal: aplicații web, automatizări n8n și baze de date.
 HTML, CSS și JavaScript simplu, fără framework și fără pas de build: fișierele se deschid direct în browser.
 
