@@ -32,6 +32,8 @@ a { color: inherit; }
 .btn-line { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
 .btn:hover { filter: brightness(1.08); }
 .label { display: inline-block; padding: 9px 22px; border-radius: 999px; font: 500 17px var(--sans); border: 2px solid transparent; background: linear-gradient(#fff, #fff) padding-box, var(--g-main) border-box; }
+.label-ic { display: inline-flex; align-items: center; gap: 12px; padding: 9px 22px 9px 18px; }
+.label-ic svg { width: 40px; height: 20px; flex: none; }
 .meta { font: 600 12px var(--mono); letter-spacing: .12em; text-transform: uppercase; opacity: .65; }
 
 /* ---------- HERO ---------- */
