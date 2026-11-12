@@ -96,15 +96,14 @@ a { color: inherit; }
 .b5 .n { color: var(--orange); }
 .b6 { background: #F4F0F8; }
 
-/* Despre mine: încape pe un ecran când apeși „Despre” în meniu */
-#despre { min-height: 100vh; justify-content: center; padding-top: 48px; padding-bottom: 48px; gap: 28px; scroll-margin-top: 0; }
-#despre .statement { font-size: clamp(26px, 2.6vw, 40px); max-width: 1000px; }
-#despre .sub { font-size: 17px; }
-#despre .bento { max-width: 1060px; grid-auto-rows: 168px; gap: 14px; }
-#despre .bc { padding: 22px; }
-#despre .bc .n { font-size: 50px; }
-#despre .b1 .n { font-size: 78px; }
-#despre .bc p { font-size: 14px; }
+/* Despre mine: totul pe centru; la clic pe „Despre” secțiunea încape pe ecran */
+#despre { align-items: center; text-align: center; padding-top: 110px; gap: 30px; scroll-margin-top: -70px; }
+#despre .tag-cod { align-self: center; }
+#despre .statement { font-size: clamp(26px, 3vw, 44px); max-width: 1120px; }
+#despre .sub { max-width: 760px; }
+#despre .bento { width: 100%; max-width: 1200px; grid-auto-rows: 172px; text-align: left; }
+#despre .bc .n { font-size: 54px; }
+#despre .b1 .n { font-size: 84px; }
 
 /* ---------- banda PORTOFOLIU ---------- */
 .band { margin-top: 90px; border-radius: 36px; overflow: hidden; background: linear-gradient(180deg, #C2531F 0%, #5A2414 22%, #06021E 40%, #06021E 100%); padding: 0 48px 56px; scroll-margin-top: 10px; }
@@ -271,7 +270,7 @@ a { color: inherit; }
   .subs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 760px) {
-  #despre { min-height: 0; padding-top: 70px; }
+  #despre { padding-top: 70px; scroll-margin-top: 0; }
   #despre .bento { grid-auto-rows: auto; }
   .wrap { padding: 8px; }
   .hero { padding: 18px 16px 24px; border-radius: 26px; }
