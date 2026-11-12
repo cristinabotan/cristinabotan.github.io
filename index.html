@@ -12,7 +12,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23B98CF5'/%3E%3Cstop offset='1' stop-color='%23F6A06B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2306021E'/%3E%3Ctext x='32' y='43' font-family='Georgia' font-style='italic' font-size='32' text-anchor='middle' fill='url(%23g)'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;600&display=swap">
-<link rel="stylesheet" href="css/stil.css?v=13">
+<link rel="stylesheet" href="css/stil.css?v=16">
 </head>
 <body>
 <div class="wrap">
@@ -67,87 +67,37 @@
   <!-- ===== PORTOFOLIU ===== -->
   <section class="band" id="portofoliu" aria-labelledby="port-t">
     <h2 class="word" id="port-t">Portofoliu</h2>
-    <div class="cards">
-
-      <article class="pc c-crm">
-        <div class="pc-left">
-          <span class="meta">01 · Aplicație web · stagiu și angajare, 2026</span>
-          <h3>CRM <span class="it">Facturare &amp; monitorizare</span></h3>
-          <p class="desc">Modulul care emite facturi cu PDF, urmărește plățile, trimite remindere și supraveghează site-urile clienților, într-un CRM folosit zilnic de o echipă.</p>
-          <div class="tags"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Supabase</span><span>Vitest</span></div>
-          <a class="btn btn-dark" href="proiecte.html#crm">Studiul de caz ↗</a>
-        </div>
-        <div class="vis vis-crm"><div class="win"><div class="win-bar"><i></i><i></i><i></i><span>facturare / F-2026-0091</span></div><img src="img/editor.webp" alt="Editorul de factură din CRM" loading="lazy"></div></div>
-      </article>
-
-      <article class="pc c-n8n">
-        <div class="pc-left">
-          <span class="meta">02 · Automatizări AI · proiect final de curs</span>
-          <h3>Sistem <span class="it">operațional automatizat</span></h3>
-          <p class="desc">Automatizează operațiunile unei firme mici: facturi cu PDF, stoc cu aprobare în Slack, încasări, salarii și KPI, cu Google Sheets drept bază de date.</p>
-          <div class="tags"><span>n8n</span><span>Agent AI Gemini</span><span>Webhook</span><span>Slack</span><span>Gmail</span><span>Google Sheets</span></div>
-          <a class="btn btn-dark" href="proiecte.html#sistem-n8n">Vezi fluxurile ↗</a>
-        </div>
-        <div class="vis vis-n8n"><div class="win" style="background:#1B1B1F"><div class="win-bar"><i></i><i></i><i></i><span>n8n · Evaluare finală · Workflow principal</span></div><img src="img/n8n-principal.webp" alt="Fluxul principal în editorul n8n" loading="lazy"></div></div>
-      </article>
-
-      <article class="pc c-curs">
-        <div class="pc-left">
-          <span class="meta">03 · Curs · mentoră, 2026</span>
-          <h3>Curs n8n <span class="it">în două limbi</span></h3>
-          <p class="desc">Am construit în HTML lecțiile 2–12 ale unui curs de automatizări AI, pornind de la un design system existent. Apoi am tradus tot cursul în rusă, cu scripturi Python, și am făcut un glosar de termeni.</p>
-          <div class="tags"><span>HTML și CSS</span><span>Python</span><span>Traducere automatizată</span><span>Accesibilitate</span></div>
-          <a class="btn btn-dark" href="proiecte.html#curs">Despre curs ↗</a>
-        </div>
-        <div class="vis vis-curs" aria-hidden="true">
-          <div class="lang"><span class="on">RO</span><span>RU</span></div>
-          <div class="slides">
-            <div class="sl dk"><span class="tg" style="color:#F6A06B">Lecția 4</span><b>Agentul de finanțe</b><div><div class="bar"></div><div class="bar s"></div></div></div>
-            <div class="sl"><span class="tg">Lecția 6</span><b>Procesarea facturilor</b><div><div class="bar"></div><div class="bar s"></div></div></div>
-            <div class="sl"><span class="tg">Урок 10</span><b>Guardrails для AI-агентов</b><div><div class="bar"></div><div class="bar s"></div></div></div>
-            <div class="sl dk"><span class="tg" style="color:#C69CF6">Glosar</span><b>71 de termeni<br>RO · RU</b><div><div class="bar"></div></div></div>
-          </div>
-        </div>
-      </article>
-
-      <article class="pc c-tg">
-        <div class="pc-left">
-          <span class="meta">04 · Agent AI · Telegram</span>
-          <h3>Agent <span class="it">imobiliar</span> pe Telegram</h3>
-          <p class="desc">Un bot care răspunde la întrebări despre proprietăți, notează clienții interesați, programează vizionări în calendar și anunță agentul imobiliar.</p>
-          <div class="tags"><span>Telegram</span><span>2 agenți AI</span><span>Memorie</span><span>Google Sheets</span><span>Calendar</span><span>Gmail</span></div>
-          <a class="btn btn-dark" href="proiecte.html#agent-telegram">Vezi fluxul ↗</a>
-        </div>
-        <div class="vis vis-tg" aria-hidden="true"><div class="canvas">
-          <div class="ctop"><span>n8n · Agent imobiliar</span><span><b>●</b> 19 noduri</span></div>
-          <div class="flow">
-            <div class="nd tr">✈<br>Telegram</div><div class="ed"></div>
-            <div class="nd sw">IF<br>cine scrie?</div>
-            <div class="split">
-              <div><div class="nd ai">🤖<br>Agent<br>clienți</div><span class="tools">Sheets ×5<br>Calendar<br>Memorie</span></div>
-              <div><div class="nd ai">🤖<br>Agent<br>imobiliar</div><span class="tools">Gmail ×2<br>Calculator<br>Memorie</span></div>
-            </div>
-          </div>
-        </div></div>
-      </article>
-
-      <article class="pc c-zilma">
-        <div class="pc-left">
-          <span class="meta">05 · Magazin online · freelance, 2025–2026</span>
-          <h3>Zilma <span class="it">magazin de cosmetice</span></h3>
-          <p class="desc">Un magazin WooCommerce de produse profesionale pentru păr, cu 221 de produse importate din listele de prețuri ale brandurilor. Designul vine dintr-un sistem CSS modular, iar coșul și contul clientului sunt personalizate prin cod.</p>
-          <div class="tags"><span>WordPress</span><span>WooCommerce</span><span>Astra</span><span>Elementor</span><span>CSS modular</span><span>PHP</span></div>
-          <a class="btn btn-dark" href="proiecte.html#zilma">Vezi capturile ↗</a>
-        </div>
-        <div class="vis vis-zilma"><div class="win light"><div class="win-bar"><i></i><i></i><i></i><span>Zilma · Acasă</span></div><img src="img/zilma-acasa.webp" alt="Pagina principală a magazinului Zilma" loading="lazy"></div><div class="mini"><div class="win-bar"><i></i><i></i><i></i><span>Contul meu</span></div><img src="img/zilma-cont.webp" alt="Pagina Contul meu din Zilma" loading="lazy"></div></div>
-      </article>
-
-      <div class="more">
-        <a class="mc" href="proiecte.html#alte-automatizari"><span class="k">n8n · AI</span><b>Bot <span class="it">Instagram &amp; Facebook</span></b><p>Răspunde clienților în mesaje, cu aprobarea unui om pe email înainte de trimitere.</p><span class="nodes"><span>Webhook</span><span>2 agenți AI</span><span>Graph API</span><span>35 noduri</span></span></a>
-        <a class="mc" href="proiecte.html#alte-automatizari"><span class="k">n8n · AI</span><b>Procesarea <span class="it">facturilor</span></b><p>Din Gmail: AI-ul verifică dacă PDF-ul e o factură și îi trece datele în Notion.</p><span class="nodes"><span>Gmail</span><span>Agent AI</span><span>Notion</span><span>21 noduri</span></span></a>
-        <a class="mc" href="proiecte.html#alte-automatizari"><span class="k">n8n · AI</span><b>Postări <span class="it">LinkedIn</span></b><p>Trei agenți AI caută pe web, scriu postarea și generează imaginea, apoi o publică.</p><span class="nodes"><span>Tavily</span><span>3 agenți AI</span><span>Flux</span><span>18 noduri</span></span></a>
-        <a class="mc" href="proiecte.html#baze-de-date"><span class="k">PostgreSQL</span><b>Reguli în <span class="it">baza de date</span></b><p>Indexuri unice parțiale și constrângeri CHECK, scrise ca migrări și testate pe o bază de test.</p><span class="nodes"><span>SQL</span><span>Supabase</span><span>Drizzle</span><span>20 migrări</span></span></a>
-      </div>
+    <div class="pgrid">
+      <a class="pcard" href="proiect-crm.html">
+        <div class="pimg" style="background:linear-gradient(135deg,#C9D8FF,#E7D6FF)"><img src="img/editor.webp" alt="" loading="lazy"><span class="go" aria-hidden="true">↗</span><span class="ptag">Aplicație web</span></div>
+        <div class="pinfo"><h3>CRM · Facturare</h3><span>Next.js · PostgreSQL</span></div>
+      </a>
+      <a class="pcard" href="proiect-sistem-n8n.html">
+        <div class="pimg" style="background:linear-gradient(135deg,#C69CF6,#E99BC0 45%,#F8C08E)"><img src="img/n8n-principal.webp" alt="" loading="lazy"><span class="go" aria-hidden="true">↗</span><span class="ptag">Automatizări AI</span></div>
+        <div class="pinfo"><h3>Sistem operațional n8n</h3><span>n8n · 158 noduri</span></div>
+      </a>
+      <a class="pcard" href="proiect-curs-n8n.html">
+        <div class="pimg mock" style="background:linear-gradient(135deg,#FFD9C7,#F3C6E0)">
+          <div class="mslides" aria-hidden="true"><div class="sl dk"><span class="tg" style="color:#F6A06B">Lecția 4</span><b>Agentul de finanțe</b></div><div class="sl"><span class="tg">Урок 10</span><b>Guardrails для AI-агентов</b></div></div>
+          <span class="go" aria-hidden="true">↗</span><span class="ptag">Curs · RO și RU</span></div>
+        <div class="pinfo"><h3>Curs n8n în două limbi</h3><span>HTML · Python</span></div>
+      </a>
+      <a class="pcard" href="proiect-agent-telegram.html">
+        <div class="pimg mock" style="background:linear-gradient(135deg,#BDE9CB,#D9CCF5)">
+          <div class="mflow" aria-hidden="true"><div class="nd tr">✈<br>Telegram</div><div class="ed"></div><div class="nd sw">IF</div><div class="ed"></div><div class="nd ai">🤖<br>2 agenți AI</div></div>
+          <span class="go" aria-hidden="true">↗</span><span class="ptag">Agent AI</span></div>
+        <div class="pinfo"><h3>Agent imobiliar pe Telegram</h3><span>n8n · Telegram</span></div>
+      </a>
+      <a class="pcard" href="proiect-zilma.html">
+        <div class="pimg" style="background:linear-gradient(135deg,#F9C9DD,#FADFCF)"><img src="img/zilma-acasa.webp" alt="" loading="lazy"><span class="go" aria-hidden="true">↗</span><span class="ptag">Magazin online</span></div>
+        <div class="pinfo"><h3>Zilma · magazin online</h3><span>WordPress · WooCommerce</span></div>
+      </a>
+      <a class="pcard" href="proiect-alte-automatizari.html">
+        <div class="pimg mock dark">
+          <div class="mlist" aria-hidden="true"><span>Bot Instagram &amp; Facebook</span><span>Procesarea facturilor</span><span>Postări LinkedIn</span><span>Video pentru YouTube</span></div>
+          <span class="go" aria-hidden="true">↗</span><span class="ptag">n8n · AI</span></div>
+        <div class="pinfo"><h3>Alte automatizări n8n</h3><span>4 fluxuri cu AI</span></div>
+      </a>
     </div>
   </section>
 
@@ -193,7 +143,7 @@
 
   <footer class="foot">
     <span>© 2026</span>
-    <span><a href="#acasa">Acasă</a> · <a href="#despre">Despre</a> · <a href="#portofoliu">Portofoliu</a> · <a href="proiecte.html">Proiecte în detaliu</a> · <a href="#contact">Contact</a></span>
+    <span><a href="#acasa">Acasă</a> · <a href="#despre">Despre</a> · <a href="#portofoliu">Portofoliu</a> · <a href="#contact">Contact</a></span>
     <span>Capturile nu conțin date reale ale clienților.</span>
   </footer>
 </div>

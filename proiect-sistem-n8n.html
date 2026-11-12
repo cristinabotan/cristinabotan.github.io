@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sistem operațional automatizat · Cristina Boțan</title>
+<meta name="description" content="Proiectul final de curs în n8n: 7 fluxuri și 158 de noduri pentru facturi, stoc, încasări, salarii și KPI.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23B98CF5'/%3E%3Cstop offset='1' stop-color='%23F6A06B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2306021E'/%3E%3Ctext x='32' y='43' font-family='Georgia' font-style='italic' font-size='32' text-anchor='middle' fill='url(%23g)'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/stil.css?v=16">
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="top" aria-label="Meniu">
+    <a class="logo" href="index.html" aria-label="Cristina Boțan, acasă"><svg viewBox="0 0 104 52" aria-hidden="true"><defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#B98CF5"/><stop offset=".5" stop-color="#E879A8"/><stop offset="1" stop-color="#F6A06B"/></linearGradient></defs><g fill="none" stroke="url(#lg)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 L6 26 L22 42"/><path d="M82 10 L98 26 L82 42"/><path d="M38 26 H66"/></g><circle cx="36" cy="26" r="7" fill="#B98CF5"/><circle cx="68" cy="26" r="7" fill="#F6A06B"/><circle cx="52" cy="26" r="4" fill="#E879A8"/></svg></a>
+    <ul class="menu dark">
+      <li><a href="index.html">Acasă</a></li>
+      <li><a href="index.html#portofoliu">Portofoliu</a></li>
+      <li><a href="index.html#experienta">Experiență</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-grad" href="fisiere/Cristina_Botan_CV.pdf" download>Descarcă CV ↓</a>
+  </nav>
+
+  <p class="inapoi"><a href="index.html#portofoliu">← Înapoi la portofoliu</a></p>
+
+  <section class="proj c-n8n" id="sistem-n8n" aria-labelledby="n8n-t">
+    <header>
+      <span class="meta">02 · Automatizări AI · proiect final de curs, mai 2026</span>
+      <h1 id="n8n-t">Sistem <span class="it">operațional automatizat</span></h1>
+      <p>Proiectul meu final la cursul „AI Automation în n8n”: automatizează operațiunile interne ale unei firme mici care vinde produse. Google Sheets e baza de date, iar anunțurile pleacă pe Slack și Gmail.</p>
+      <div class="tags" style="margin-top:4px"><span>n8n</span><span>Agent AI (Gemini)</span><span>Webhook</span><span>Cron</span><span>Slack</span><span>Gmail</span><span>Google Sheets și Drive</span><span>HTML → PDF</span></div>
+    </header>
+    <div class="fapte">
+      <div class="fapt"><b class="gt">7</b><p>fluxuri: unul principal, 5 sub-fluxuri și unul pentru erori</p></div>
+      <div class="fapt"><b class="gt">158</b><p>noduri în total</p></div>
+      <div class="fapt"><b class="gt">3</b><p>declanșatoare: comandă (webhook), program orar și manual</p></div>
+    </div>
+    <article class="bloc"><h3>Fluxul principal: un dispecer</h3>
+      <dl class="pr"><dt>Cum merge</dt><dd>Trei declanșatoare (comenzi prin webhook, verificarea stocului la 9, 11, 13, 15 și 17, salariile lunar) trec printr-un Switch, care trimite lucrul la sub-fluxul potrivit. Fiecare rulare e scrisă în jurnal, iar dacă jurnalul nu poate fi scris, primesc o alertă pe email.</dd></dl>
+      <figure class="ecran"><img src="img/n8n-principal.webp" alt="Fluxul principal în editorul n8n, cu notițele mele colorate" loading="lazy"><figcaption>Captură din editorul n8n. Notițele colorate explică de ce am ales fiecare pas.</figcaption></figure></article>
+    <div class="subs">
+      <div><span>26 noduri · agent AI</span><b>Facturi clienți</b><p>Agentul AI găsește clientul și produsele, face factura în HTML, o transformă în PDF, scade stocul și o trimite pe email.</p></div>
+      <div><span>31 noduri</span><b>Stoc</b><p>Propune comenzi către furnizori, verifică bugetul și cere aprobare pe Slack. Face oferte pentru produsele care expiră.</p></div>
+      <div><span>16 noduri</span><b>Încasări</b><p>Potrivește plățile cu facturile și le marchează achitate, achitate parțial sau plătite în plus.</p></div>
+      <div><span>44 noduri</span><b>Salarii</b><p>Citește pontajele trimise pe Slack (PDF, Excel sau text), calculează salariile, cere aprobare și anunță angajații.</p></div>
+      <div><span>22 noduri</span><b>KPI și control</b><p>Indicatori zilnici și lunari și fluxul de numerar.</p></div>
+      <div><span>3 noduri</span><b>Erori</b><p>Orice eroare ajunge în jurnal și ca alertă pe email. Pașii critici au reîncercări separate.</p></div>
+    </div>
+    <article class="bloc"><h3>Sub-fluxul „Facturi clienți”, de la cap la coadă</h3>
+      <figure class="ecran"><img src="img/n8n-facturi.webp" alt="Sub-fluxul Facturi clienți în editorul n8n" loading="lazy"><figcaption>Grupat pe etape: date de intrare, agentul AI, factura și PDF-ul, stocul, apoi KPI.</figcaption></figure></article>
+  </section>
+
+  <nav class="pnav" aria-label="Alte proiecte"><a href="proiect-crm.html"><span>← Proiectul anterior</span><b>CRM · Facturare și monitorizare</b></a><a href="index.html#portofoliu" class="toate">Toate proiectele</a><a href="proiect-curs-n8n.html" class="dr"><span>Proiectul următor →</span><b>Curs n8n în două limbi</b></a></nav>
+
+  <footer class="foot">
+    <span>© 2026</span>
+    <span><a href="index.html">Acasă</a> · <a href="index.html#portofoliu">Portofoliu</a> · <a href="index.html#experienta">Experiență</a> · <a href="index.html#contact">Contact</a></span>
+    <span>Capturile nu conțin date reale ale clienților.</span>
+  </footer>
+</div>
+</body>
+</html>

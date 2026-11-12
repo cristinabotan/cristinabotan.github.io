@@ -11,14 +11,19 @@ HTML, CSS și JavaScript simplu, fără framework și fără pas de build: fiși
 
 ```
 portofoliu-cristina/
-├── index.html      pagina principală: hero, Despre (cifre), PORTOFOLIU (cartonașele proiectelor),
-│                   Experiență și studii, Contact
-├── proiecte.html   proiectele în detaliu: CRM, Sistem n8n, Curs n8n, Agent Telegram, Zilma,
-│                   Alte automatizări, Baze de date
-├── css/stil.css    tot designul, comun pentru ambele pagini (culorile sus, în :root)
-├── js/script.js    butonul care copiază adresa de email
-├── img/            poza și capturile (.webp)
-└── fisiere/        CV-ul și certificatele în PDF (le descarcă vizitatorii)
+├── index.html                      pagina principală: hero, Despre, PORTOFOLIU (grila cu 6 proiecte),
+│                                   Experiență și studii, Contact
+├── proiect-crm.html                o pagină pentru fiecare proiect (cu „anterior / următor” la final)
+├── proiect-sistem-n8n.html
+├── proiect-curs-n8n.html
+├── proiect-agent-telegram.html
+├── proiect-zilma.html
+├── proiect-alte-automatizari.html
+├── proiecte.html                   doar trimite la portofoliu (pentru linkurile vechi)
+├── css/stil.css                    tot designul, comun pentru toate paginile
+├── js/script.js                    butonul care copiază adresa de email
+├── img/                            poza și capturile (.webp)
+└── fisiere/                        CV-ul și certificatele în PDF
 ```
 
 - **Culorile** se schimbă în `css/stil.css`, sus, în `:root`: `--night` (fundalul închis), `--orange`, `--coral`, `--lilac` și gradientul `--g-main` (liliac → roz → piersică).
@@ -31,21 +36,15 @@ Dublu-clic pe `index.html`. Atât.
 
 ## Cum adaug un proiect nou
 
-**1. Cartonașul de pe pagina principală** (`index.html`, în `<section class="band" id="portofoliu">`).
-Copiez un `<article class="pc ...">` întreg și schimb:
-- culoarea cartonașului: `c-crm`, `c-n8n`, `c-curs`, `c-tg` sau `c-zilma`;
-- eticheta mică (`meta`), titlul (`h3`, cu partea înclinată în `<span class="it">`), descrierea (`desc`) și `tags`;
-- captura: imaginea din `img/` în `<div class="win">`;
-- linkul butonului, de exemplu `proiecte.html#numele-proiectului`.
-
-O lucrare mai mică merge în grila de jos, ca `<a class="mc">` în `<div class="more">`.
-
-**2. Detaliile** (`proiecte.html`).
-Copiez o `<section class="proj ..." id="...">` întreagă și adaug linkul ei în bara `jump` de sus. În ea:
+**1. Pagina proiectului.** Copiez una dintre paginile `proiect-*.html` (de exemplu `proiect-zilma.html`) sub un nume nou și schimb conținutul din `<section class="proj ...">`:
 - **Problema / Soluția / Rezultat** în `<dl class="pr">`;
 - „Rolul meu” în `<div class="rol">`;
 - cifre în `<div class="fapte">`;
 - capturi în `<figure class="ecran">`; două alăturate în `<div class="doua">`.
+
+Jos, în `<nav class="pnav">`, pun legăturile spre proiectul anterior și următor.
+
+**2. Cartonașul din pagina principală** (`index.html`, în `<div class="pgrid">`). Copiez un `<a class="pcard" ...>` întreg și schimb: linkul (`href`), imaginea din `img/`, eticheta mică (`ptag`), titlul (`h3`) și tehnologiile de lângă el. Grila are 3 coloane; cartonașul al 7-lea începe un rând nou.
 
 **3. Imaginile**: le pun în `img/`, în `.webp`, cu lățimea de cel mult 1600 px (se convertesc gratuit pe squoosh.app).
 
