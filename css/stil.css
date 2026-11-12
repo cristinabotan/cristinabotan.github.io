@@ -264,8 +264,8 @@ a { color: inherit; }
 
 /* ---------- Portofoliu: file de filtrare și 6 cartonașe identice ---------- */
 .port3 { align-items: center; text-align: center; }
-.port3 .tag-cod { align-self: center; }
-.port3 { background: var(--paper); border-radius: 36px; margin-top: 90px; padding: 44px 48px 44px; gap: 22px; scroll-margin-top: 10px; }
+.port3 .tag-cod { align-self: center; background: #fff; }
+.port3 { background: #F0D2BD; border-radius: 36px; margin-top: 90px; padding: 44px 48px 44px; gap: 22px; scroll-margin-top: 10px; }
 .filtre { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
 .filtre button { font: 500 15px var(--sans); padding: 10px 20px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--muted); cursor: pointer; }
 .filtre button:hover { color: var(--ink); border-color: var(--lilac); }
