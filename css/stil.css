@@ -55,9 +55,9 @@ a { color: inherit; }
 .menu.dark { background: var(--paper); border-color: var(--line); }
 .menu.dark a { color: var(--muted); }
 .menu.dark a:hover, .menu.dark a[aria-current] { background: #fff; color: var(--ink); }
-.hero-main { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 40px; align-items: stretch; padding: 90px 32px 80px; }
+.hero-main { display: grid; grid-template-columns: minmax(0, 780px) 300px; justify-content: center; gap: 80px; align-items: stretch; padding: 90px 32px 80px; }
 .foto { position: relative; min-height: 0; }
-.foto .portrait { position: absolute; top: 0; bottom: 0; right: 0; }
+.foto .portrait { position: absolute; top: 0; bottom: 0; left: 0; }
 .hello { font: italic 600 clamp(26px, 3.2vw, 46px) var(--sans); letter-spacing: -.02em; margin: 0; }
 .big { font: 900 clamp(38px, 5.2vw, 72px)/1 var(--sans); letter-spacing: -.04em; text-transform: uppercase; margin: 10px 0 0; }
 .big .l1 { display: block; background: linear-gradient(90deg, #C7A6FF, #E9D9FF 70%, #fff); -webkit-background-clip: text; background-clip: text; color: transparent; }
@@ -65,7 +65,7 @@ a { color: inherit; }
 .big .l2 b { font-weight: 900; background: linear-gradient(90deg, #fff, #FADFCF 40%, #F6A06B); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .indent { width: 120px; flex: none; } /* păstrează locul textului „& Web Developer” */
 .hero-sub { margin: 26px 0 0; font-size: 19px; line-height: 1.6; color: rgba(255, 255, 255, .78); max-width: 560px; }
-.portrait { height: 100%; width: auto; aspect-ratio: 9 / 10; border-radius: 36px; overflow: hidden; border: 1px solid rgba(255, 255, 255, .16); background: #2A1748; }
+.portrait { height: 100%; width: auto; aspect-ratio: 9 / 10; border-radius: 50% 50% 32px 32px / 42% 42% 32px 32px; overflow: hidden; border: 1px solid rgba(255, 255, 255, .16); background: #2A1748; }
 .portrait img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; }
 .stack { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px 24px; padding: 22px 32px 0; border-top: 1px solid rgba(255, 255, 255, .1); }
 .stack span { display: flex; align-items: center; gap: 10px; font: 600 18px var(--sans); color: rgba(255, 255, 255, .85); }
@@ -250,7 +250,7 @@ a { color: inherit; }
 
 /* ---------- ecrane mici ---------- */
 @media (max-width: 1100px) {
-  .hero-main { grid-template-columns: minmax(0, 1fr) 300px; padding: 60px 8px 50px; }
+  .hero-main { grid-template-columns: minmax(0, 1fr) 300px; gap: 40px; padding: 60px 8px 50px; }
   .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pc { grid-template-columns: minmax(0, 1fr); }
   .more { grid-template-columns: repeat(2, minmax(0, 1fr)); }
