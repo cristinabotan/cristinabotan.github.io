@@ -287,6 +287,12 @@ a { color: inherit; }
 @media (max-width: 760px) { .grid3 { grid-template-columns: minmax(0, 1fr); } .port3 { padding: 50px 14px; border-radius: 26px; margin-top: 60px; } }
 
 /* ---------- paginile de proiect ---------- */
+.ecran.lat .scroll-x { overflow-x: auto; overscroll-behavior-x: contain; background: #181818; }
+.ecran.lat .scroll-x img { width: auto; height: 486px; max-width: none; }
+.lat-ajutor { display: block; margin-top: 4px; font-size: 13px; }
+.lat-ajutor a { color: var(--lilac); }
+@media (max-width: 760px) { .ecran.lat .scroll-x img { height: 340px; } }
+
 .etape { display: flex; flex-direction: column; gap: 16px; }
 .etape figure:first-child { max-width: 880px; }
 .etape figcaption b { color: var(--coral); }
