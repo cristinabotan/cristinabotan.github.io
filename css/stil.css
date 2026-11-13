@@ -209,11 +209,10 @@ a { color: inherit; }
 .rec { font-size: 14px; color: var(--muted); margin: 0; padding: 0 8px; }
 
 /* ---------- contact, subsol ---------- */
-.contact { padding: 100px 0 0; scroll-margin-top: 10px; }
-.cta { position: relative; overflow: hidden; border-radius: 32px; padding: 110px 48px 210px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 30px;
+.contact { padding: 100px 0 0; scroll-margin-top: 10px; display: flex; flex-direction: column; align-items: center; gap: 28px; }
+.cta { position: relative; overflow: hidden; width: 100%; box-sizing: border-box; border-radius: 32px; padding: 64px 48px 130px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px;
   background: radial-gradient(55% 70% at 12% 0%, rgba(246, 160, 107, .45), transparent 70%), radial-gradient(55% 75% at 90% 8%, rgba(185, 140, 245, .5), transparent 70%), linear-gradient(180deg, #FDE6D7 0%, #F9DBEA 48%, #EEE3FB 100%); }
 .cta > * { position: relative; z-index: 1; }
-.cta .tag-cod { background: rgba(255, 255, 255, .55); }
 .cta-t { margin: 0; max-width: 980px; font: 600 clamp(30px, 3.6vw, 50px)/1.15 var(--sans); letter-spacing: -.025em; color: var(--ink); }
 .cta-t .it { font-weight: 400; font-size: 1.08em; }
 .cta-sub { margin: -6px 0 0; max-width: 560px; font-size: 17px; color: #4E4560; }
@@ -225,7 +224,7 @@ a { color: inherit; }
 .cta-btn:hover { filter: brightness(1.25); }
 .cta-lnk:hover { background: #fff; }
 .stare { min-height: 1.4em; font-size: 14px; color: #4E4560; margin: -8px 0 0; }
-.cta .dune { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 240px; z-index: 0; }
+.cta .dune { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 150px; z-index: 0; }
 .foot { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 2fr); gap: 40px; padding: 18px 48px 40px; font-size: 14px; color: var(--muted); }
 .foot-id { display: flex; flex-direction: column; gap: 10px; max-width: 430px; }
 .foot-logo { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); font-size: 17px; }
@@ -387,8 +386,8 @@ a { color: inherit; }
   .stack span { font-size: 15px; }
   .sec { padding: 70px 12px 10px; }
   .contact { padding-top: 70px; }
-  .cta { padding: 64px 18px 160px; border-radius: 26px; gap: 24px; }
-  .cta .dune { height: 160px; }
+  .cta { padding: 44px 18px 110px; border-radius: 26px; gap: 20px; }
+  .cta .dune { height: 110px; }
   .bento { grid-template-columns: minmax(0, 1fr); grid-auto-rows: auto; }
   .bc { min-height: 170px; } .b1, .b4 { grid-row: auto; }
   .b1 .n { font-size: 72px; }
