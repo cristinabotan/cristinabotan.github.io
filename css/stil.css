@@ -312,6 +312,10 @@ a { color: inherit; }
 .intro-txt p { margin: 0; font-size: 18px; line-height: 1.65; color: #4A4258; }
 .intro-txt .tags { margin-top: 0; }
 .intro .rol { max-width: none; }
+.fapte.fapte-mici { gap: 10px; margin-top: 4px; }
+.fapte.fapte-mici .fapt { padding: 14px 16px; }
+.fapte.fapte-mici .fapt b { font-size: 34px; }
+.fapte.fapte-mici .fapt p { font-size: 13px; margin-top: 4px; }
 .inapoi { margin: 18px 16px 0; font-size: 15px; }
 .inapoi a { color: var(--muted); text-decoration: none; }
 .inapoi a:hover { color: var(--ink); }
