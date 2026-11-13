@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23B98CF5'/%3E%3Cstop offset='1' stop-color='%23F6A06B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2306021E'/%3E%3Ctext x='32' y='43' font-family='Georgia' font-style='italic' font-size='32' text-anchor='middle' fill='url(%23g)'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;600&display=swap">
-<link rel="stylesheet" href="css/stil.css?v=21">
+<link rel="stylesheet" href="css/stil.css?v=22">
 </head>
 <body>
 <div class="wrap">
@@ -30,25 +30,15 @@
     <header>
       <span class="meta">04 · Agent AI · temă de curs</span>
       <h1 id="tg-t">Agent <span class="it">imobiliar</span> pe Telegram</h1>
-      <p>Un bot pentru o agenție imobiliară. Același chat servește doi oameni diferiți: clientul care caută o casă și agentul care o vinde.</p>
+      <p>Un bot Telegram pentru o agenție imobiliară, care adaptează conversația la interlocutor: clientul care caută o locuință sau agentul care gestionează ofertele.</p>
       <div class="tags" style="margin-top:4px"><span>Telegram</span><span>2 agenți AI</span><span>Memorie</span><span>Google Sheets</span><span>Google Calendar</span><span>Gmail</span></div>
     </header>
     <dl class="pr">
-      <dt>Problema</dt><dd>Agentul imobiliar răspunde mereu la aceleași întrebări și ține evidența clienților de mână.</dd>
-      <dt>Soluția</dt><dd>Un nod IF verifică cine scrie. Clientul vorbește cu un agent AI care caută în lista de proprietăți, îi notează datele și programează vizionarea în calendar. Agentul imobiliar primește un rezumat pe email.</dd>
-      <dt class="rez">Rezultat</dt><dd>19 noduri, cu memorie de conversație: botul ține minte ce a spus clientul mai devreme.</dd>
+      <dt>Problema</dt><dd>Agentul imobiliar răspunde mereu la aceleași întrebări și ține manual evidența clienților.</dd>
+      <dt>Soluția</dt><dd>Un nod IF identifică tipul interlocutorului și direcționează conversația. Agentul AI pentru clienți caută proprietăți, înregistrează preferințele și programează vizionările în Google Calendar. Agentul imobiliar primește un rezumat prin e-mail.</dd>
+      <dt class="rez">Rezultat</dt><dd>19 noduri și memorie conversațională, care păstrează contextul și preferințele comunicate anterior de client.</dd>
     </dl>
-    <div class="vis-static vis-tg" aria-hidden="true"><div class="canvas">
-      <div class="ctop"><span>n8n · Agent imobiliar</span><span><b>●</b> 19 noduri</span></div>
-      <div class="flow">
-        <div class="nd tr">✈<br>Telegram</div><div class="ed"></div>
-        <div class="nd sw">IF<br>cine scrie?</div>
-        <div class="split">
-          <div><div class="nd ai">🤖<br>Agent<br>clienți</div><span class="tools">Sheets ×5<br>Calendar<br>Memorie</span></div>
-          <div><div class="nd ai">🤖<br>Agent<br>imobiliar</div><span class="tools">Gmail ×2<br>Calculator<br>Memorie</span></div>
-        </div>
-      </div>
-    </div></div>
+    <figure class="ecran"><img src="img/n8n-telegram.webp" alt="Fluxul agentului imobiliar în editorul n8n: Telegram, IF și doi agenți AI cu instrumentele lor" loading="lazy"><figcaption>Captură din editorul n8n. Sus, agentul pentru agentul imobiliar; jos, agentul pentru clienți, fiecare cu memoria și instrumentele lui.</figcaption></figure>
   </section>
 
   <nav class="pnav" aria-label="Alte proiecte"><a href="proiect-curs-n8n.html"><span>← Proiectul anterior</span><b>Curs n8n în două limbi</b></a><a href="index.html#portofoliu" class="toate">Toate proiectele</a><a href="proiect-zilma.html" class="dr"><span>Proiectul următor →</span><b>Zilma · magazin online</b></a></nav>
