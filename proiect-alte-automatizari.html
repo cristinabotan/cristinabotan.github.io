@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alte automatizări n8n · Cristina Boțan</title>
-<meta name="description" content="Automatizări AI din cursul de n8n: social media, facturi, LinkedIn și YouTube.">
+<meta name="description" content="Cinci automatizări n8n cu AI: postări Facebook, procesarea facturilor, asistent pentru mesaje, sortarea e-mailurilor și video YouTube.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23B98CF5'/%3E%3Cstop offset='1' stop-color='%23F6A06B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2306021E'/%3E%3Ctext x='32' y='43' font-family='Georgia' font-style='italic' font-size='32' text-anchor='middle' fill='url(%23g)'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;600&display=swap">
-<link rel="stylesheet" href="css/stil.css?v=28">
+<link rel="stylesheet" href="css/stil.css?v=29">
 </head>
 <body>
 <div class="wrap">
@@ -28,52 +28,40 @@
 
   <section class="proj" id="alte-automatizari" style="background:var(--paper)" aria-labelledby="alte-t">
     <header>
-      <span class="meta">06 · n8n · teme din cursul „AI Automation în n8n”</span>
+      <span class="meta">06 · Automatizări n8n</span>
       <h1 id="alte-t">Alte <span class="it">automatizări</span> cu AI</h1>
-      <p>Șapte fluxuri din cursul de n8n, fiecare pentru o problemă concretă: social media, relația cu clienții, e-mailuri, documente, video și recrutare. Toate capturile sunt făcute direct din editorul n8n.</p>
+      <p>O selecție de 5 fluxuri din cele peste 60 pe care le-am construit în n8n, fiecare pentru o problemă concretă: social media, documente, relația cu clienții, e-mailuri și conținut video. Toate capturile sunt făcute direct din editorul n8n.</p>
     </header>
-    <nav class="jump" aria-label="Fluxuri"><a href="#flux-facebook">Generator de postări pentru Facebook</a><a href="#flux-linkedin">Generator de postări pentru LinkedIn</a><a href="#flux-instagram">Bot pentru mesajele din Instagram și Facebook</a><a href="#flux-emailuri">Sortarea automată a e-mailurilor</a><a href="#flux-facturi-ai">Procesarea automată a facturilor</a><a href="#flux-youtube">Creator de videoclipuri pentru YouTube</a><a href="#flux-cv">Analiza CV-urilor</a></nav>
+    <nav class="jump" aria-label="Fluxuri"><a href="#flux-facebook">Generator de postări pentru Facebook</a><a href="#flux-facturi-ai">Procesarea automată a facturilor</a><a href="#flux-instagram">Asistent AI pentru mesajele din Instagram și Facebook</a><a href="#flux-emailuri">Sortarea automată a e-mailurilor</a><a href="#flux-youtube">Creator de videoclipuri pentru YouTube</a></nav>
     <article class="bloc auto" id="flux-facebook">
-      <div class="auto-head"><span class="meta">Social media · AI · 16 noduri</span><h2>Generator de postări pentru Facebook</h2></div>
-      <p class="auto-desc">La ora programată, un agent AI caută pe web idei de actualitate și scrie postarea. Un model generează imaginea, postarea se publică pe pagina de Facebook, se trimite o confirmare pe Telegram și se notează într-un tabel.</p>
-      <div class="tags"><span>Programare</span><span>Agent AI</span><span>Tavily</span><span>Facebook Graph API</span><span>Telegram</span><span>Google Sheets</span></div>
-      <figure class="ecran"><img src="img/n8n-facebook.webp" alt="Generator de postări pentru Facebook, în editorul n8n" loading="lazy"></figure>
-    </article>
-    <article class="bloc auto" id="flux-linkedin">
-      <div class="auto-head"><span class="meta">Social media · AI · 18 noduri</span><h2>Generator de postări pentru LinkedIn</h2></div>
-      <p class="auto-desc">Pornește dintr-un formular. Trei agenți AI scriu textul postării (cu căutare pe web), descrierea imaginii și titlul. Imaginea se generează automat, postarea se publică pe LinkedIn, iar autorul primește o confirmare pe e-mail.</p>
-      <div class="tags"><span>Formular</span><span>3 agenți AI</span><span>Căutare web</span><span>Generare imagine</span><span>LinkedIn</span><span>Gmail</span></div>
-      <figure class="ecran"><img src="img/n8n-linkedin.webp" alt="Generator de postări pentru LinkedIn, în editorul n8n" loading="lazy"></figure>
-    </article>
-    <article class="bloc auto" id="flux-instagram">
-      <div class="auto-head"><span class="meta">Relația cu clienții · AI · 18 noduri</span><h2>Bot pentru mesajele din Instagram și Facebook</h2></div>
-      <p class="auto-desc">Primește mesajele clienților printr-un webhook, iar un agent AI cu memorie pregătește răspunsul. Înainte de trimitere, un om aprobă răspunsul pe e-mail; apoi botul răspunde prin API-ul Meta.</p>
-      <div class="tags"><span>Webhook</span><span>Agent AI</span><span>Memorie</span><span>Aprobare umană</span><span>Graph API</span></div>
-      <figure class="ecran"><img src="img/n8n-instagram.webp" alt="Bot pentru mesajele din Instagram și Facebook, în editorul n8n" loading="lazy"></figure>
-    </article>
-    <article class="bloc auto" id="flux-emailuri">
-      <div class="auto-head"><span class="meta">Productivitate · AI · 19 noduri</span><h2>Sortarea automată a e-mailurilor</h2></div>
-      <p class="auto-desc">Fiecare e-mail nou este citit de un agent AI, care îl încadrează într-o categorie. Un nod Switch aplică eticheta potrivită în Gmail, astfel încât căsuța rămâne ordonată fără intervenție manuală.</p>
-      <div class="tags"><span>Gmail</span><span>Agent AI</span><span>Răspuns structurat</span><span>Switch</span><span>Etichete</span></div>
-      <figure class="ecran"><img src="img/n8n-emailuri.webp" alt="Sortarea automată a e-mailurilor, în editorul n8n" loading="lazy"></figure>
+      <div class="auto-head"><span class="meta">Social media · AI · 15 noduri</span><h2>Generator de postări pentru Facebook</h2></div>
+      <p class="auto-desc">Pornește dintr-un formular cu ideea postării. Un agent AI caută informații pe web și ține cont de postările anterioare, apoi scrie textul și descrierea imaginii. Imaginea este generată automat, postarea se publică pe pagina de Facebook, iar confirmarea și linkul ajung pe Telegram și într-un tabel.</p>
+      <div class="tags"><span>Formular</span><span>Agent AI</span><span>Căutare web</span><span>Generare imagine</span><span>Facebook Graph API</span><span>Telegram</span><span>Google Sheets</span></div>
+      <figure class="ecran lat"><div class="scroll-x" tabindex="0" aria-label="Imagine lată: glisați pe orizontală"><img src="img/n8n-facebook.webp?v=3" alt="Generator de postări pentru Facebook, în editorul n8n" width="2016" height="517" loading="lazy"></div><figcaption><span class="lat-ajutor">Glisați pe orizontală pentru tot fluxul sau <a href="img/n8n-facebook.webp?v=3" target="_blank" rel="noopener">deschideți imaginea întreagă ↗</a></span></figcaption></figure>
     </article>
     <article class="bloc auto" id="flux-facturi-ai">
-      <div class="auto-head"><span class="meta">Documente · AI · 21 noduri</span><h2>Procesarea automată a facturilor</h2></div>
-      <p class="auto-desc">Ia atașamentele din Gmail și le salvează în Google Drive. Un agent AI verifică dacă documentul este o factură, apoi datele și fiecare rând de produse sunt extrase și salvate în Notion. Fluxul este organizat pe patru etape.</p>
-      <div class="tags"><span>Gmail</span><span>Google Drive</span><span>Agent AI</span><span>Extragere date</span><span>Notion</span></div>
-      <figure class="ecran"><img src="img/n8n-facturi-ai.webp" alt="Procesarea automată a facturilor, în editorul n8n" loading="lazy"></figure>
+      <div class="auto-head"><span class="meta">Documente · AI · 33 noduri</span><h2>Procesarea automată a facturilor</h2></div>
+      <p class="auto-desc">Preia atașamentele primite pe Gmail și le salvează în Google Drive. AI-ul clasifică fiecare document și verifică dacă este o factură; datele facturii și fiecare rând de produse sunt extrase și salvate în Notion, iar documentele care nu sunt facturi sunt eliminate.</p>
+      <div class="tags"><span>Gmail</span><span>Google Drive</span><span>Clasificare AI</span><span>Extragere date</span><span>Notion</span></div>
+      <figure class="ecran lat"><div class="scroll-x" tabindex="0" aria-label="Imagine lată: glisați pe orizontală"><img src="img/n8n-facturi-ai.webp?v=3" alt="Procesarea automată a facturilor, în editorul n8n" width="1909" height="412" loading="lazy"></div><figcaption><span class="lat-ajutor">Glisați pe orizontală pentru tot fluxul sau <a href="img/n8n-facturi-ai.webp?v=3" target="_blank" rel="noopener">deschideți imaginea întreagă ↗</a></span></figcaption></figure>
+    </article>
+    <article class="bloc auto" id="flux-instagram">
+      <div class="auto-head"><span class="meta">Relația cu clienții · AI · 24 noduri</span><h2>Asistent AI pentru mesajele din Instagram și Facebook</h2></div>
+      <p class="auto-desc">Primește mesajele clienților printr-un webhook. Un agent AI cu memorie răspunde folosind lista de produse, întrebările frecvente, ghidul de mărimi și lista comenzilor, iar răspunsul este trimis pe canalul potrivit, Instagram sau Facebook.</p>
+      <div class="tags"><span>Webhook</span><span>Agent AI</span><span>Memorie</span><span>Instrumente</span><span>Graph API</span><span>Gmail</span></div>
+      <figure class="ecran lat"><div class="scroll-x" tabindex="0" aria-label="Imagine lată: glisați pe orizontală"><img src="img/n8n-instagram.webp?v=3" alt="Asistent AI pentru mesajele din Instagram și Facebook, în editorul n8n" width="1728" height="518" loading="lazy"></div><figcaption><span class="lat-ajutor">Glisați pe orizontală pentru tot fluxul sau <a href="img/n8n-instagram.webp?v=3" target="_blank" rel="noopener">deschideți imaginea întreagă ↗</a></span></figcaption></figure>
+    </article>
+    <article class="bloc auto" id="flux-emailuri">
+      <div class="auto-head"><span class="meta">Productivitate · AI · 42 noduri</span><h2>Sortarea automată a e-mailurilor</h2></div>
+      <p class="auto-desc">Fiecare e-mail nou este filtrat și citit de un agent AI, care îl încadrează într-una din cele 7 categorii. Un nod Switch aplică apoi eticheta potrivită în Gmail, astfel încât căsuța rămâne ordonată fără intervenție manuală.</p>
+      <div class="tags"><span>Gmail</span><span>Agent AI</span><span>Răspuns structurat</span><span>Switch</span><span>Etichete</span></div>
+      <figure class="ecran" style="max-width:878px"><img src="img/n8n-emailuri.webp?v=3" alt="Sortarea automată a e-mailurilor, în editorul n8n" width="878" height="785" loading="lazy"></figure>
     </article>
     <article class="bloc auto" id="flux-youtube">
-      <div class="auto-head"><span class="meta">Conținut video · AI · 16 noduri</span><h2>Creator de videoclipuri pentru YouTube</h2></div>
-      <p class="auto-desc">Ia ideile dintr-un tabel, scrie scenariul și indicațiile pentru video, generează videoclipul printr-un API și verifică periodic dacă e gata. Videoclipul se publică pe YouTube, iar erorile se notează separat.</p>
+      <div class="auto-head"><span class="meta">Conținut video · AI · 15 noduri</span><h2>Creator de videoclipuri pentru YouTube</h2></div>
+      <p class="auto-desc">La ora programată, ia o idee dintr-un tabel, scrie scenariul și indicațiile pentru video, generează videoclipul printr-un API și verifică periodic dacă este gata. Videoclipul se publică pe YouTube, iar starea fiecărei idei este actualizată în tabel.</p>
       <div class="tags"><span>Programare</span><span>LLM</span><span>json2video</span><span>Wait și Switch</span><span>YouTube</span><span>Google Sheets</span></div>
-      <figure class="ecran"><img src="img/n8n-youtube.webp" alt="Creator de videoclipuri pentru YouTube, în editorul n8n" loading="lazy"></figure>
-    </article>
-    <article class="bloc auto" id="flux-cv">
-      <div class="auto-head"><span class="meta">Resurse umane · AI · 7 noduri</span><h2>Analiza CV-urilor</h2></div>
-      <p class="auto-desc">CV-urile primite pe e-mail sunt salvate în Google Drive, iar textul lor este extras din PDF. Un agent AI evaluează candidatul după criterii clare și adaugă rezultatul într-un tabel.</p>
-      <div class="tags"><span>Gmail</span><span>PDF</span><span>Agent AI</span><span>Google Drive</span><span>Google Sheets</span></div>
-      <figure class="ecran"><img src="img/n8n-cv.webp" alt="Analiza CV-urilor, în editorul n8n" loading="lazy"></figure>
+      <figure class="ecran lat"><div class="scroll-x" tabindex="0" aria-label="Imagine lată: glisați pe orizontală"><img src="img/n8n-youtube.webp?v=3" alt="Creator de videoclipuri pentru YouTube, în editorul n8n" width="2071" height="378" loading="lazy"></div><figcaption><span class="lat-ajutor">Glisați pe orizontală pentru tot fluxul sau <a href="img/n8n-youtube.webp?v=3" target="_blank" rel="noopener">deschideți imaginea întreagă ↗</a></span></figcaption></figure>
     </article>
   </section>
 
