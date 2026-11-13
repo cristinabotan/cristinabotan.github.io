@@ -210,7 +210,7 @@ a { color: inherit; }
 
 /* ---------- contact, subsol ---------- */
 .contact { padding: 100px 0 0; scroll-margin-top: 10px; display: flex; flex-direction: column; align-items: center; gap: 28px; }
-.cta { position: relative; overflow: hidden; width: 100%; box-sizing: border-box; border-radius: 32px; padding: 64px 48px 130px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px;
+.cta { position: relative; overflow: hidden; width: 100%; box-sizing: border-box; border-radius: 32px; padding: 60px 48px 120px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px;
   background: radial-gradient(55% 70% at 12% 0%, rgba(246, 160, 107, .45), transparent 70%), radial-gradient(55% 75% at 90% 8%, rgba(185, 140, 245, .5), transparent 70%), linear-gradient(180deg, #FDE6D7 0%, #F9DBEA 48%, #EEE3FB 100%); }
 .cta > * { position: relative; z-index: 1; }
 .cta-t { margin: 0; max-width: 980px; font: 600 clamp(30px, 3.6vw, 50px)/1.15 var(--sans); letter-spacing: -.025em; color: var(--ink); }
@@ -231,7 +231,7 @@ a { color: inherit; }
 .foot-logo svg { width: 52px; height: 26px; }
 .foot-id p { margin: 0; }
 .foot-bar { grid-column: 1 / -1; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 24px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; }
-.foot-col { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.foot-col { display: flex; justify-content: space-between; gap: 32px; }
 .foot h3 { margin: 4px 0 12px; font: 600 12px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--lilac); }
 .foot ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 .foot a { text-decoration: none; color: var(--muted); }
@@ -412,7 +412,7 @@ a { color: inherit; }
   .cta-act { max-width: 360px; }
   .cta-lnk { padding: 10px 14px; }
   .foot { grid-template-columns: minmax(0, 1fr); gap: 28px; padding: 10px 12px 30px; }
-  .foot-col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .foot-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
   .foot-col > div:nth-child(2) { grid-row: span 2; }
   .top { padding: 6px 4px; } .top .menu { display: none; }
   .p-head { padding: 40px 12px 6px; }
