@@ -28,32 +28,42 @@
 
   <section class="proj c-n8n" id="sistem-n8n" aria-labelledby="n8n-t">
     <header>
-      <span class="meta">02 · Automatizări AI · proiect final de curs, mai 2026</span>
+      <span class="meta">02 · Automatizări AI · mai 2026</span>
       <h1 id="n8n-t">Sistem <span class="it">operațional automatizat</span></h1>
-      <p>Proiect final realizat în cadrul cursului „AI Automation în n8n”. Sistemul automatizează procesele interne ale unei mici afaceri de comerț. Google Sheets servește drept bază de date, iar notificările sunt trimise prin Slack și Gmail.</p>
-      <div class="tags" style="margin-top:4px"><span>n8n</span><span>Agent AI (Gemini)</span><span>Webhook</span><span>Cron</span><span>Slack</span><span>Gmail</span><span>Google Sheets și Drive</span><span>HTML → PDF</span></div>
     </header>
+    <div class="intro">
+      <div class="intro-txt">
+        <p>Proiect final realizat în cadrul cursului „AI Automation în n8n”. Sistemul automatizează procesele interne ale unei mici afaceri de comerț. Google Sheets servește drept bază de date, iar notificările sunt trimise prin Slack și Gmail.</p>
+        <div class="tags"><span>n8n</span><span>Agent AI (Gemini)</span><span>Webhook</span><span>Cron</span><span>Slack</span><span>Gmail</span><span>Google Sheets și Drive</span><span>HTML → PDF</span></div>
+      </div>
+      <div class="rol"><b>Ce demonstrează proiectul</b><ul>
+      <li>Arhitectură modulară: un flux principal care distribuie lucrul către subfluxuri specializate.</li>
+      <li>Un agent AI cu instrumente, care citește datele clienților și ale stocului direct din tabele.</li>
+      <li>Aprobare umană înainte de pașii importanți: în Slack pentru comenzile către furnizori și prin e-mail pentru salarii.</li>
+      <li>Tratarea erorilor: jurnal, alertă prin e-mail și reîncercări separate pentru pașii critici.</li>
+    </ul></div>
+    </div>
     <div class="fapte">
-      <div class="fapt"><b class="gt">7</b><p>fluxuri: un flux principal, cinci subfluxuri și un flux pentru tratarea erorilor.</p></div>
-      <div class="fapt"><b class="gt">158</b><p>de noduri în total.</p></div>
-      <div class="fapt"><b class="gt">3</b><p>declanșatoare: webhook pentru comenzi, programare automată și pornire manuală.</p></div>
+      <div class="fapt"><b class="gt">7</b><p>fluxuri: un flux principal, cinci subfluxuri și un flux pentru tratarea erorilor</p></div>
+      <div class="fapt"><b class="gt">158</b><p>de noduri în total</p></div>
+      <div class="fapt"><b class="gt">3</b><p>declanșatoare: webhook pentru comenzi, programare automată și pornire manuală</p></div>
     </div>
     <article class="bloc"><h3>Fluxul principal: un dispecer</h3>
-      <dl class="pr"><dt>Cum merge</dt><dd>Trei declanșatoare pornesc automatizarea: webhook-ul pentru comenzi, programarea automată pentru verificarea stocului și pornirea manuală pentru testare. Un nod Switch direcționează fiecare solicitare către subfluxul potrivit. Execuțiile și erorile sunt înregistrate în jurnal; dacă înregistrarea eșuează, se trimite o alertă prin e-mail.</dd></dl>
+      <dl class="pr"><dt>Cum funcționează</dt><dd>Trei declanșatoare pornesc automatizarea: webhook-ul pentru comenzi, programarea automată pentru verificarea stocului și pornirea manuală pentru testare. Un nod Switch direcționează fiecare solicitare către subfluxul potrivit. Execuțiile și erorile sunt înregistrate în jurnal; dacă înregistrarea eșuează, se trimite o alertă prin e-mail.</dd></dl>
       <figure class="ecran"><img src="img/n8n-principal.webp" alt="Fluxul principal în editorul n8n, cu notițele mele colorate" loading="lazy"><figcaption>Captură din editorul n8n. Notițele colorate explică de ce am ales fiecare pas.</figcaption></figure></article>
     <div class="subs">
-      <div><span>26 noduri · agent AI</span><b>Facturi clienți</b><p>Agentul AI identifică clientul și produsele, generează factura în HTML, o convertește în PDF, actualizează stocul și trimite factura prin e-mail.</p></div>
+      <div><span>26 noduri · agent AI</span><b>Facturi clienți</b><p>Fluxul identifică clientul și produsele cu ajutorul unui agent AI, generează factura în HTML, o convertește în PDF, actualizează stocul și trimite factura prin e-mail.</p></div>
       <div><span>31 noduri</span><b>Stoc</b><p>Propune comenzile către furnizori, verifică bugetul și solicită aprobarea prin Slack. Generează oferte pentru produsele care se apropie de data expirării.</p></div>
-      <div><span>16 noduri</span><b>Încasări</b><p>Asociază plățile cu facturile și marchează facturile drept achitate, achitate parțial sau plătite în plus.</p></div>
+      <div><span>16 noduri</span><b>Încasări</b><p>Asociază plățile cu facturile și actualizează statutul acestora: achitată, achitată parțial sau cu o sumă plătită în plus.</p></div>
       <div><span>44 noduri</span><b>Salarii</b><p>Citește pontajele primite prin Slack (PDF, Excel sau text), calculează salariile, solicită aprobarea și notifică angajații.</p></div>
-      <div><span>22 noduri</span><b>KPI și control</b><p>Calculează indicatorii zilnici și lunari și urmărește fluxul de numerar.</p></div>
-      <div><span>3 noduri</span><b>Erori</b><p>Erorile sunt înregistrate în jurnal și semnalate prin e-mail. Pașii critici au mecanisme separate de reîncercare.</p></div>
+      <div><span>22 noduri</span><b>KPI și control</b><p>Calculează indicatorii zilnici și lunari și centralizează datele despre încasări și plăți.</p></div>
+      <div><span>3 noduri</span><b>Erori</b><p>Fiecare eroare este înregistrată în jurnal și semnalată prin e-mail. Pașii critici au mecanisme separate de reîncercare.</p></div>
     </div>
-    <article class="bloc"><h3>Sub-fluxul „Facturi clienți”, de la cap la coadă</h3>
+    <article class="bloc"><h3>Subfluxul „Facturi clienți”, de la cap la coadă</h3>
       <figure class="ecran"><img src="img/n8n-facturi.webp" alt="Sub-fluxul Facturi clienți în editorul n8n" loading="lazy"><figcaption>Fluxul este organizat pe etape: date de intrare, agent AI, generarea facturii și a PDF-ului, actualizarea stocului și calcularea indicatorilor.</figcaption></figure></article>
   </section>
 
-  <nav class="pnav" aria-label="Alte proiecte"><a href="proiect-crm.html"><span>← Proiectul anterior</span><b>CRM · Facturare și monitorizare</b></a><a href="index.html#portofoliu" class="toate">Toate proiectele</a><a href="proiect-curs-n8n.html" class="dr"><span>Proiectul următor →</span><b>Curs n8n în două limbi</b></a></nav>
+  <nav class="pnav" aria-label="Alte proiecte"><a href="proiect-crm.html"><span>← Proiectul anterior</span><b>CRM: facturare și monitorizare web</b></a><a href="index.html#portofoliu" class="toate">Toate proiectele</a><a href="proiect-curs-n8n.html" class="dr"><span>Proiectul următor →</span><b>Curs n8n în două limbi</b></a></nav>
 
   <footer class="foot">
     <span>© 2026</span>
