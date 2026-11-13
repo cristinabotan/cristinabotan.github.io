@@ -230,7 +230,7 @@ a { color: inherit; }
 .foot-logo { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); font-size: 17px; }
 .foot-logo svg { width: 52px; height: 26px; }
 .foot-id p { margin: 0; }
-.foot-id small { font-size: 12.5px; margin-top: 2px; }
+.foot-bar { grid-column: 1 / -1; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 24px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; }
 .foot-col { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .foot h3 { margin: 4px 0 12px; font: 600 12px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--lilac); }
 .foot ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
