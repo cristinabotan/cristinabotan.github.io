@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CRM · Facturare și monitorizare · Cristina Boțan</title>
+<title>CRM pentru facturare și monitorizarea site-urilor · Cristina Boțan</title>
 <meta name="description" content="Modulul de facturare și monitorizare al unui CRM: editor de facturi cu PDF, remindere, incidente și reguli în baza de date.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23B98CF5'/%3E%3Cstop offset='1' stop-color='%23F6A06B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2306021E'/%3E%3Ctext x='32' y='43' font-family='Georgia' font-style='italic' font-size='32' text-anchor='middle' fill='url(%23g)'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,14 +29,14 @@
   <section class="proj c-crm" id="crm" aria-labelledby="crm-t">
     <header>
       <span class="meta">01 · Aplicație web · iunie – noiembrie 2026</span>
-      <h1 id="crm-t">CRM <span class="it">Facturare &amp; monitorizare</span></h1>
-      <p>CRM-ul intern al unei firme care face site-uri și ține cursuri. Am construit partea de facturi, plăți, rapoarte și monitorizarea site-urilor clienților: întâi ca fluxuri n8n, apoi direct în aplicație.</p>
+      <h1 id="crm-t">CRM pentru <span class="it">facturare și monitorizarea site-urilor</span></h1>
+      <p>CRM intern pentru o firmă care dezvoltă site-uri web și organizează cursuri. Am dezvoltat funcționalități pentru facturare, plăți, rapoarte și monitorizarea site-urilor clienților: mai întâi ca fluxuri n8n, apoi direct în aplicație.</p>
       <div class="tags" style="margin-top:4px"><span>Next.js</span><span>TypeScript</span><span>React</span><span>PostgreSQL</span><span>Supabase</span><span>Drizzle</span><span>Vitest</span></div>
     </header>
-    <div class="rol"><b>Rolul meu</b><ul>
-      <li>Am fost responsabilă de modul, de la baza de date până la ecrane.</li>
+    <div class="rol"><b>Contribuția mea</b><ul>
+      <li>Am dezvoltat modulul de la baza de date până la interfața utilizatorului.</li>
       <li>28 de pull requesturi, toate revizuite înainte de unire, aproximativ 36.000 de rânduri de cod și teste.</li>
-      <li>Am făcut două audituri ale modulului, am reparat ce au găsit și am încheiat cu un test cap-coadă, de la factură la plată.</li>
+      <li>Am remediat problemele identificate în cele două audituri și am testat fluxul cap-coadă, de la emiterea facturii până la plată.</li>
     </ul></div>
     <div class="fapte">
       <div class="fapt"><b class="gt">28</b><p>pull requesturi revizuite</p></div>
@@ -44,7 +44,7 @@
       <div class="fapt"><b class="gt">20</b><p>migrări de bază de date</p></div>
     </div>
     <article class="bloc"><h3>Facturarea, dintr-o privire</h3>
-      <dl class="pr"><dt>Problema</dt><dd>Facturile firmelor și ale cursanților se amestecau, iar starea lor nu se vedea fără să deschizi fiecare factură.</dd><dt>Soluția</dt><dd>Un ecran de pornire cu două drumuri separate, persoane juridice și persoane fizice, fiecare cu numărul de facturi, cele neachitate și cele întârziate.</dd></dl>
+      <dl class="pr"><dt>Problema</dt><dd>Facturile firmelor și ale cursanților se amestecau, iar starea lor nu se vedea fără să deschizi fiecare factură.</dd><dt>Soluția</dt><dd>Un ecran de pornire separă facturile persoanelor juridice de cele ale persoanelor fizice și afișează numărul total, cele neachitate și cele întârziate.</dd></dl>
       <figure class="ecran"><img src="img/facturare-start.webp" alt="Ecranul principal de facturare, cu facturile pentru firme și pentru cursanți" loading="lazy"></figure></article>
     <article class="bloc"><h3>Editorul de factură, cu PDF</h3>
       <dl class="pr"><dt>Problema</dt><dd>Facturile se făceau într-un program separat.</dd><dt>Soluția</dt><dd>Un editor în CRM: completezi în stânga și vezi factura în dreapta. PDF-ul pleacă atașat la email.</dd></dl>
@@ -62,15 +62,15 @@
       <dl class="pr"><dt>Problema</dt><dd>Rapoartele KPI veneau din fluxuri n8n separate, pe email, și nu se puteau compara ușor de la o săptămână la alta.</dd><dt>Soluția</dt><dd>Un ecran de rapoarte în CRM, cu comutator Săptămânal / Lunar și file pentru lead-uri, pipeline, proiecte, facturi și clienți. Cifrele sunt verificate față de baza de date.</dd></dl>
       <figure class="ecran"><img src="img/rapoarte.webp" alt="Ecranul de rapoarte săptămânale și lunare din CRM" loading="lazy"></figure></article>
     <article class="bloc"><h3>Formularul de date fiscale</h3>
-      <dl class="pr"><dt>Problema</dt><dd>Datele firmei se cereau pe email și se copiau de mână.</dd><dt>Soluția</dt><dd>Clientul primește un link sigur, valabil o singură dată, și își completează singur datele.</dd></dl>
+      <dl class="pr"><dt>Problema</dt><dd>Datele firmei erau solicitate prin e-mail și apoi copiate manual.</dd><dt>Soluția</dt><dd>Clientul primește un link sigur, valabil o singură dată, și își completează singur datele.</dd></dl>
       <figure class="ecran ingust"><img src="img/date-fiscale.webp" alt="Formularul public de date fiscale" loading="lazy"></figure></article>
   </section>
 
 <section class="proj" id="baze-de-date" style="background:var(--paper)" aria-labelledby="bd-t">
     <header>
       <span class="meta">Baze de date · în același CRM</span>
-      <h2 id="bd-t">Reguli păzite de <span class="it">baza de date</span></h2>
-      <p>Ce nu are voie să se întâmple e oprit de baza de date, nu doar de interfață. Fiecare schimbare e o migrare, încercată întâi pe o bază de test.</p>
+      <h2 id="bd-t">Reguli impuse de <span class="it">baza de date</span></h2>
+      <p>Regulile importante sunt impuse direct de baza de date, nu doar de interfață. Fiecare modificare de structură este livrată printr-o migrare și testată mai întâi pe o bază de date de test.</p>
     </header>
     <article class="bloc"><h3>O singură sarcină pe proiect</h3>
       <dl class="pr"><dt>Problema</dt><dd>Două rulări aproape simultane ale fluxului creau sarcini dublate.</dd><dt>Soluția</dt><dd>Un index unic parțial: baza refuză a doua sarcină deschisă pe același proiect.</dd></dl>
