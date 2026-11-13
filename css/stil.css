@@ -287,6 +287,11 @@ a { color: inherit; }
 @media (max-width: 760px) { .grid3 { grid-template-columns: minmax(0, 1fr); } .port3 { padding: 50px 14px; border-radius: 26px; margin-top: 60px; } }
 
 /* ---------- paginile de proiect ---------- */
+.etape { display: flex; flex-direction: column; gap: 16px; }
+.etape figure:first-child { max-width: 880px; }
+.etape figcaption b { color: var(--coral); }
+.nota-etape { margin: 0; font-size: 14px; color: var(--muted); }
+
 .bloc.auto { background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 28px; gap: 14px; scroll-margin-top: 16px; }
 .auto-head { display: flex; flex-direction: column; gap: 6px; }
 .auto-head h2 { margin: 0; font: 700 clamp(22px, 2.2vw, 28px)/1.2 var(--sans); letter-spacing: -.02em; }
