@@ -21,7 +21,7 @@
       <li><a href="index.html#experienta">Experiență</a></li>
       <li><a href="index.html#contact">Contact</a></li>
     </ul>
-    <a class="btn btn-grad" href="fisiere/Cristina_Botan_CV.pdf" download>Descarcă CV ↓</a>
+    <a class="btn btn-grad" href="fisiere/Cristina_Botan_CV.pdf" download>Descarcă CV-ul (PDF) ↓</a>
   </nav>
 
   <p class="inapoi"><a href="index.html#portofoliu">← Înapoi la portofoliu</a></p>
@@ -37,8 +37,8 @@
         <div class="tags"><span>Next.js</span><span>TypeScript</span><span>React</span><span>PostgreSQL</span><span>Supabase</span><span>Drizzle</span><span>Vitest</span></div>
       </div>
       <div class="rol"><b>Contribuția mea</b><ul>
-      <li>Am dezvoltat modulul de la baza de date până la interfața utilizatorului.</li>
-      <li>28 de pull request-uri, toate revizuite înainte de integrare, aproximativ 36.000 de rânduri de cod și teste.</li>
+      <li>Am dezvoltat modulul de la baza de date până la interfața de utilizator.</li>
+      <li>Am revizuit 28 de pull request-uri înainte de integrare și am scris aproximativ 36.000 de rânduri de cod și teste.</li>
       <li>Am remediat problemele identificate în cele două audituri și am testat fluxul cap-coadă, de la emiterea facturii până la plată.</li>
     </ul></div>
     </div>
@@ -48,7 +48,7 @@
       <div class="fapt"><b class="gt">20</b><p>migrări de bază de date</p></div>
     </div>
     <article class="bloc"><h3>Facturarea, dintr-o privire</h3>
-      <dl class="pr"><dt>Problema</dt><dd>Facturile firmelor și ale cursanților se amestecau, iar starea lor nu se vedea fără să deschizi fiecare factură.</dd><dt>Soluția</dt><dd>Un ecran de pornire separă facturile persoanelor juridice de cele ale persoanelor fizice și afișează numărul total, cele neachitate și cele întârziate.</dd></dl>
+      <dl class="pr"><dt>Problema</dt><dd>Facturile firmelor și ale cursanților se amestecau, iar starea lor nu se vedea fără să deschizi fiecare factură.</dd><dt>Soluția</dt><dd>Un ecran de pornire separă facturile persoanelor juridice de cele ale persoanelor fizice și afișează numărul total de facturi, precum și numărul celor neachitate și întârziate.</dd></dl>
       <figure class="ecran"><img src="img/facturare-start.webp" alt="Ecranul principal de facturare, cu facturile pentru firme și pentru cursanți" loading="lazy"></figure></article>
     <article class="bloc"><h3>Editorul de factură, cu PDF</h3>
       <dl class="pr"><dt>Problema</dt><dd>Facturile se făceau într-un program separat.</dd><dt>Soluția</dt><dd>Un editor în CRM: completezi în stânga și vezi factura în dreapta. PDF-ul este trimis ca atașament la e-mail.</dd></dl>
@@ -57,16 +57,16 @@
       <dl class="pr"><dt>Problema</dt><dd>Filtrele erau numeroase, iar starea facturii nu era consecventă între ecrane.</dd><dt>Soluția</dt><dd>File separate pentru facturile achitate, de încasat și întârziate; statutul „Întârziată” este stabilit după aceeași regulă în toate ecranele.</dd></dl>
       <div class="doua"><figure class="ecran"><img src="img/facturi-firme.webp" alt="Lista facturilor firmelor" loading="lazy"></figure><figure class="ecran"><img src="img/fisa-factura.webp" alt="Fișa unei facturi întârziate" loading="lazy"></figure></div></article>
     <article class="bloc"><h3>Facturi pentru cursanți</h3>
-      <dl class="pr"><dt>Problema</dt><dd>Doar firmele puteau primi factură.</dd><dt>Soluția</dt><dd>Facturi pentru persoane fizice, cu rambursare dacă un cursant renunță.</dd></dl>
+      <dl class="pr"><dt>Problema</dt><dd>Facturile puteau fi emise doar firmelor.</dd><dt>Soluția</dt><dd>Facturi pentru persoane fizice și rambursarea contravalorii în cazul retragerii unui cursant.</dd></dl>
       <div class="doua"><figure class="ecran"><img src="img/facturi-cursanti.webp" alt="Lista facturilor cursanților" loading="lazy"></figure><figure class="ecran"><img src="img/rambursare.webp" alt="O factură rambursată" loading="lazy"></figure></div></article>
     <article class="bloc"><h3>Incidentele site-urilor</h3>
-      <dl class="pr"><dt>Problema</dt><dd>O listă greu de citit, iar clientul primea emailuri automate la fiecare cădere.</dd><dt>Soluția</dt><dd>Un panou Căzut → Revenit → Închis, cu durata exactă. Notificarea către client este trimisă manual.</dd></dl>
+      <dl class="pr"><dt>Problema</dt><dd>O listă greu de citit, iar clientul primea e-mailuri automate la fiecare cădere.</dd><dt>Soluția</dt><dd>Un panou Căzut → Revenit → Închis, cu durata exactă. Notificarea către client este trimisă manual.</dd></dl>
       <figure class="ecran"><img src="img/incidente.webp" alt="Panoul incidentelor" loading="lazy"></figure></article>
     <article class="bloc"><h3>Rapoarte săptămânale și lunare</h3>
-      <dl class="pr"><dt>Problema</dt><dd>Rapoartele KPI erau trimise prin e-mail de fluxuri n8n separate și nu se puteau compara ușor de la o săptămână la alta.</dd><dt>Soluția</dt><dd>Un ecran de rapoarte în CRM, cu comutator Săptămânal / Lunar și file pentru lead-uri, pipeline, proiecte, facturi și clienți. Cifrele sunt verificate față de baza de date.</dd></dl>
+      <dl class="pr"><dt>Problema</dt><dd>Fluxuri n8n separate generau și trimiteau rapoartele KPI prin e-mail, iar rezultatele erau greu de comparat de la o săptămână la alta.</dd><dt>Soluția</dt><dd>Un ecran de rapoarte în CRM, cu comutator Săptămânal / Lunar și file pentru lead-uri, pipeline, proiecte, facturi și clienți. Cifrele sunt verificate față de baza de date.</dd></dl>
       <figure class="ecran"><img src="img/rapoarte.webp" alt="Ecranul de rapoarte săptămânale și lunare din CRM" loading="lazy"></figure></article>
     <article class="bloc"><h3>Formularul de date fiscale</h3>
-      <dl class="pr"><dt>Problema</dt><dd>Datele firmei erau solicitate prin e-mail și apoi copiate manual.</dd><dt>Soluția</dt><dd>Clientul primește un link sigur, valabil o singură dată, și își completează singur datele.</dd></dl>
+      <dl class="pr"><dt>Problema</dt><dd>Datele firmei erau solicitate prin e-mail și apoi copiate manual.</dd><dt>Soluția</dt><dd>Clientul primește un link securizat, valabil pentru o singură utilizare, și își completează datele.</dd></dl>
       <figure class="ecran ingust"><img src="img/date-fiscale.webp" alt="Formularul public de date fiscale" loading="lazy"></figure></article>
   </section>
 
@@ -84,7 +84,7 @@
   <span class="k">where</span> source = <span class="s">'facturare-automata'</span>
     <span class="k">and</span> status <span class="k">not in</span> (<span class="s">'finalizat'</span>, <span class="s">'anulat'</span>);</pre></div></article>
     <article class="bloc"><h3>Un singur plătitor pe factură</h3>
-      <dl class="pr"><dt>Problema</dt><dd>O factură putea ajunge, din greșeală, și pe o firmă, și pe un cursant.</dd><dt>Soluția</dt><dd>O constrângere CHECK: exact unul dintre cei doi plătitori.</dd></dl>
+      <dl class="pr"><dt>Problema</dt><dd>Din greșeală, o factură putea fi asociată atât unei firme, cât și unui cursant.</dd><dt>Soluția</dt><dd>O constrângere CHECK se asigură că factura are exact un plătitor: fie o firmă, fie un cursant.</dd></dl>
       <div class="cod"><pre><span class="k">alter table</span> invoices
   <span class="k">add constraint</span> un_singur_platitor
   <span class="k">check</span> ((project_id <span class="k">is null</span>) &lt;&gt; (enrollment_id <span class="k">is null</span>));</pre></div></article>
@@ -103,7 +103,7 @@
     <nav class="foot-col" aria-label="Subsol">
       <div><h3>Pagini</h3><ul><li><a href="index.html">Acasă</a></li><li><a href="index.html#despre">Despre</a></li><li><a href="index.html#portofoliu">Portofoliu</a></li><li><a href="index.html#experienta">Experiență</a></li><li><a href="index.html#contact">Contact</a></li></ul></div>
       <div><h3>Proiecte</h3><ul><li><a href="proiect-crm.html">CRM: facturare și monitorizare</a></li><li><a href="proiect-sistem-n8n.html">Sistem operațional n8n</a></li><li><a href="proiect-curs-n8n.html">Materiale de curs n8n</a></li><li><a href="proiect-agent-telegram.html">Asistenți AI pe Telegram</a></li><li><a href="proiect-zilma.html">Zilma · magazin online</a></li><li><a href="proiect-alte-automatizari.html">Alte automatizări cu AI</a></li></ul></div>
-      <div><h3>Contact</h3><ul><li><a href="mailto:botancristina1321@gmail.com">E-mail</a></li><li><a href="https://www.linkedin.com/in/cristina-b-6a0a77439" target="_blank" rel="noopener">LinkedIn ↗</a></li><li><a href="https://github.com/cristinabotan" target="_blank" rel="noopener">GitHub ↗</a></li><li><a href="fisiere/Cristina_Botan_CV.pdf" download>CV în PDF ↓</a></li></ul></div>
+      <div><h3>Contact</h3><ul><li><a href="mailto:botancristina1321@gmail.com">E-mail</a></li><li><a href="https://www.linkedin.com/in/cristina-b-6a0a77439" target="_blank" rel="noopener">LinkedIn ↗</a></li><li><a href="https://github.com/cristinabotan" target="_blank" rel="noopener">GitHub ↗</a></li><li><a href="fisiere/Cristina_Botan_CV.pdf" download>Descarcă CV-ul (PDF) ↓</a></li></ul></div>
     </nav>
     <div class="foot-bar"><span>© 2026 Cristina Boțan</span><span>Capturile nu conțin date reale ale clienților.</span></div>
   </footer>
