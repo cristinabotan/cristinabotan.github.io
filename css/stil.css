@@ -397,7 +397,7 @@ a { color: inherit; }
   .pc { padding: 24px 20px; gap: 26px; border-radius: 24px; min-height: 0; }
   .vis { min-height: 260px; }
   .win { left: 16px; top: 16px; }
-  .slides { inset: 16px; gap: 10px; } .sl { padding: 14px; } .sl b { font-size: 15px; }
+  .slides { inset: 16px; gap: 10px; } .lang + .slides { top: 52px; } .sl { padding: 14px; } .sl b { font-size: 15px; }
   .canvas { inset: 12px; }
   .nd { width: 60px; height: 60px; font-size: 9px; border-radius: 10px; } .nd.tr { border-radius: 30px 10px 10px 30px; } .nd.ai { width: 76px; }
   .ed { width: 16px; } .split { padding-left: 16px; gap: 24px; } .split > div::before { left: -16px; width: 16px; }
@@ -418,7 +418,7 @@ a { color: inherit; }
   .p-head { padding: 40px 12px 6px; }
   .proj { padding: 30px 18px; border-radius: 26px; gap: 26px; }
   .doua, .fapte, .subs, .intro, .studii { grid-template-columns: minmax(0, 1fr); }
-  .vis-static { height: 300px; }
+  .vis-static { height: 300px; } .vis-static:has(.lang) { height: 350px; }
 }
 @media (prefers-reduced-motion: no-preference) {
   .btn, .cta-btn, .cta-lnk, .mc, .jump a { transition: filter .2s, border-color .2s; }
